@@ -25,10 +25,18 @@ if(strlen($request) > 0)
     $routes = array(
         "anekdotes" => "anekdotes",  //anekdotes
     );
-    //Vérifier si le tableau existe
-    if(array_key_exists($request[1],$routes))
-    {
-        include("projects/Troll/" . $routes[$request[1]] . ".php");
+    //Vérifier si le tableau est assez long
+    if(length($request) > 1){
+        //Vérifier si le tableau existe
+        if(array_key_exists($request[1],$routes))
+        {
+            include("projects/Troll/" . $routes[$request[1]] . ".php");
+        }
+        else
+        {
+            //Erreur, rediriger vers 404
+            include("404.php");
+        }
     }
     else
     {
