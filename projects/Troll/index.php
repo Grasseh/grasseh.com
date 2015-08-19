@@ -26,7 +26,7 @@ if(strlen($request) > 0)
         "anekdotes" => "anekdotes",  //anekdotes
     );
     //Vérifier si le tableau est assez long
-    if(length($request) > 1){
+    if(count($request) > 1){
         //Vérifier si le tableau existe
         if(array_key_exists($request[1],$routes))
         {
