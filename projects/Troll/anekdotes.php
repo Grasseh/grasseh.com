@@ -7,7 +7,7 @@ try {
     $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Steve',0 )");
     $cmd->execute();
     */
-    echo("This page currently works as it should.");
+    echo("This page currently works as it should. I'm quite happy about it.");
 
 
 
