@@ -25,14 +25,6 @@
 	      echo($row["name"]. " <button data-id='". $row["id"] . "' data-count='". $row["count"] . "' class='btn-plus'>" . $row["count"] . "</button><br/>");
 	    }
 
-	    echo("This page currently works as it should. I'm quite happy about it.MY HOOKS ARE FINALLY WORKING!!!!!!");
-
-
-
-
-
-
-
 	}
 	catch(PDOException $e) {
 	    echo $e->getMessage();
@@ -42,8 +34,19 @@
 	<script>
 		$(function(){
 			$(".btn-plus").click(function(){
-				($(this).data("count",$(this).data("count")+1));
-				($(this).html($(this).data("count")));
+				var $that = $(this);
+				$.ajax({
+					url : "http://<?php echo ABSOLUTE_SERVER_PATH; ?>/troll/plus/" + $that.data("id"),
+					datatype : 'JSON'
+				})
+				.done(function(result){
+					($that.data("count",$that.data("count")+1));
+					($that.html($that.data("count")));
+				})
+				.fail(function(result){
+					alert("An error has occured");
+				});
+
 			});
 		})
 	</script>
