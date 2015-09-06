@@ -1,4 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine On
- 
+
+RewriteRule ^public/(.*)$ public/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^public/ 
 RewriteRule ^(.*)$ index.php [L]
