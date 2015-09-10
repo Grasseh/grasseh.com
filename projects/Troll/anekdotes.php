@@ -4,26 +4,13 @@
 	    # MS SQL Server and Sybase with PDO_DBLIB
 	    //Seed base user
 	    $pdo = new PDO(CONNEXION_STRING,DATABASE_USER,DATABASE_PASSWORD);
-	    
-	    //Seed base user
-	    /*
-	    $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Steve',0 )");
-	    $cmd->execute();
-	    $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Mathieu',0 )");
-	    $cmd->execute();
-	    $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Frank',0 )");
-	    $cmd->execute();
-	    $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Sam',0 )");
-	    $cmd->execute();
-	    $cmd = $pdo->prepare("INSERT INTO Users ( name,count ) values ( 'Seb',0 )");
-	    $cmd->execute();
-	    */
-	    
-	    $cmd = $pdo->prepare('SELECT * FROM Users');
-		$cmd->execute();
+
+	    $cmd = $pdo->prepare('SELECT Users.id as id, Users.name as name, COUNT(Trolls.id) as count FROM Users LEFT JOIN Trolls ON Users.id = Trolls.user_id GROUP BY Users.id,Users.name');
+			$cmd->execute();
 	    while ($row = $cmd->fetch(PDO::FETCH_ASSOC)) {
 	      echo($row["name"]. " <button data-id='". $row["id"] . "' data-count='". $row["count"] . "' class='btn-plus'>" . $row["count"] . "</button><br/>");
 	    }
+	    echo(time());
 
 	}
 	catch(PDOException $e) {
