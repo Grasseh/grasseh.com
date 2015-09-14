@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/css/style.css">
 <link rel="stylesheet" href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/libs/Skeleton/css/normalize.css">
 <link rel="stylesheet" href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/libs/Skeleton/css/skeleton.css">
-<link rel="icon" type="image/png" href="public/favicon.png">
+<link rel="icon" type="image/png" href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
 </head>
 <body class="container">
 <div class="row">

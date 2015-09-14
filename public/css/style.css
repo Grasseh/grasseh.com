@@ -9,7 +9,6 @@
 }
 
 .menu a{
-  color : #237B23;
   text-align:center;
   height: 100px;
   border:solid;
@@ -17,11 +16,14 @@
   font-size:25px;
   border-right: none;
   font-weight: bold;
+  color : #FFFFFF;
+  background-color: #237B23;
+  border-color: #237B23;
 }
 
 .menu a:hover{
-  color : #FFFFFF;
-  background-color: #237B23;
+  color : #237B23;
+  background-color: #FFFFFF;
   border-color: #237B23;
 }
 
