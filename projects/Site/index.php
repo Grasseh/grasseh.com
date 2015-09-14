@@ -9,7 +9,7 @@
 <link rel="icon" type="image/png" href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
 </head>
 <body class="container">
-<div class="row">
+<div class="row top">
   <div class="col-2 no-spacing-column">
   <?php
     include("header.php");
@@ -20,6 +20,7 @@
     include("menu.php");
   ?>
   </div>
+
 </div>
 <div class="content">
   <p>This page is under construction. Please come back soon!</p>
