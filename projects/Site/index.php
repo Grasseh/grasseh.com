@@ -10,12 +10,12 @@
 </head>
 <body class="container">
 <div class="row">
-  <div class="col-2 column">
+  <div class="col-2 no-spacing-column">
   <?php
     include("header.php");
   ?>
   </div>
-  <div class="col-10 column">
+  <div class="col-10 no-spacing-column">
   <?php
     include("menu.php");
   ?>

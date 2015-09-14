@@ -7,3 +7,29 @@
   width : 100px;
   height : 100px;
 }
+
+.menu a{
+  color : #237B23;
+  text-align:center;
+  height: 100px;
+  border:solid;
+  text-decoration: none;
+  font-size:25px;
+  border-right: none;
+  font-weight: bold;
+}
+
+.menu a:hover{
+  color : #FFFFFF;
+  background-color: #237B23;
+  border-color: #237B23;
+}
+
+.help{
+  line-height: 100px;
+}
+
+.menuText{
+  vertical-align: middle;
+}
+
