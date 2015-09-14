@@ -1,3 +1,3 @@
 <div class="header">
-HEADER
+<img src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png" class="logo">
 </div>

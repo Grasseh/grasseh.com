@@ -2,3 +2,8 @@
 .container {
   font-family: 'Merriweather', serif;
 }
+
+.logo{
+  width : 100px;
+  height : 100px;
+}
