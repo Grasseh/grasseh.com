@@ -51,5 +51,47 @@
 
 .top{
   background-color: #225500;
+}
+
+.section_one{
+  height: 400px;
+}
+
+.one-left{
 
 }
+
+.one-right{
+  width:100%;
+  height: 400px;
+}
+
+.section_two{
+  height: 400px;
+  background-color: #225500;
+  color: #FFFFFF;
+}
+
+
+.two-left{
+  width:100%;
+  height: 400px;
+
+}
+
+.two-right{
+}
+
+.section_three{
+  height: 400px;
+}
+
+.three-left{
+
+}
+
+.three-right{
+  width:100%;
+  height: 400px;
+}
+

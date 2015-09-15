@@ -23,7 +23,30 @@
 
 </div>
 <div class="content">
-  <p>This page is under construction. Please come back soon!</p>
+  <div class="section_one">
+    <div class="col-6 column one-left">
+      <p>This page is under construction. Please come back soon!</p>
+    </div>
+    <div class="col-6 column one-right">
+      <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
+    </div>
+  </div>
+  <div class="section_two">
+    <div class="col-6 column two-left">
+      <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
+    </div>
+    <div class="col-6 column two-right">
+      <p>This page is under construction. Please come back soon!</p>
+    </div>
+  </div>
+  <div class="section_three">
+    <div class="col-6 column three-left">
+      <p>This page is under construction. Please come back soon!</p>
+    </div>
+    <div class="col-6 column three-right">
+      <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
+    </div>
+  </div>
 </div>
 <?php
   include("footer.php");
