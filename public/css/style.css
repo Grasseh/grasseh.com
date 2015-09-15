@@ -83,15 +83,18 @@
 }
 
 .section_three{
+  background-color: #225500;
   height: 400px;
 }
 
-.three-left{
+.three-right{
+  background-color: #FFFFFF;
+  height: 400px;
 
 }
 
-.three-right{
-  background-color: #225500;
+.three-left{
   color: #FFFFFF;
+  height: 400px;
 }
 
