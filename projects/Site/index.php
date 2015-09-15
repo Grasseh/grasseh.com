@@ -25,7 +25,8 @@
 <div class="content">
   <div class="section_one">
     <div class="col-6 column one-left">
-      <p>This page is under construction. Please come back soon!</p>
+      <h1>Who am I?</h1>
+      <p>I'm a 21 years old backend programmer, from Quebec, Canada. I currently study software engineering at the ÉTS, in Montréal. I'm passionate about creating algorithms and discovering new ways to work around problems. The only side I dislike from web development is designing a good looking page. Let's be honest, this page's design is rather basic. I'm all about fonctionnalities, and I much prefer have someone else work on the looks of any I do.</p>
     </div>
     <div class="col-6 column one-right">
       <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
@@ -36,7 +37,20 @@
       <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
     </div>
     <div class="col-6 column two-right">
-      <p>This page is under construction. Please come back soon!</p>
+      <h1>Favorite languages/programming utilities</h1>
+      <ul>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>C#</li>
+        <li>Git(Seriously, everyone that programs a little should learn Git)</li>
+      </ul>
+      <h1>Other languages I know</h1>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>Java</li>
+        <li>ASP + ASP.net</li>
+      </ul>
     </div>
   </div>
   <div class="section_three">
