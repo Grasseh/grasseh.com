@@ -35,6 +35,10 @@
   line-height: 100px;
 }
 
+.helpFooter{
+  line-height: 50px;
+}
+
 .menuText{
   vertical-align: middle;
 }
@@ -42,6 +46,7 @@
 .footer{
   background-color: #225500;
   color : #FFFFFF;
+  height: 50px;
 }
 
 .top{
