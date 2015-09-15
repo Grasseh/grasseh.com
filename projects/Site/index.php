@@ -55,10 +55,19 @@
   </div>
   <div class="section_three">
     <div class="col-6 column three-left">
-      <p>This page is under construction. Please come back soon!</p>
+      <h1>Projects</h1>
+      <ul>
+        <li><a href="www.grasseh.com">This website</a></li>
+        <li><a href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/site/projects/airport">Airport package simulator(C#)</a></li>
+        <li><a href="<?php echo(ABSOLUTE_SERVER_PATH); ?>/site/projects/progress-quest">Progress Quest</a></li>
+      </ul>
     </div>
     <div class="col-6 column three-right">
-      <img class="one-right" src="<?php echo(ABSOLUTE_SERVER_PATH); ?>/public/images/logo.png">
+      <h1>Other pages</h1>
+      <ul>
+        <li><a href="http://www.github.com/grasseh">GitHub</a></li>
+        <li><a href="http://www.steamcommunity.com/id/grasseh">Steam</a></li>
+      </ul>
     </div>
   </div>
 </div>
