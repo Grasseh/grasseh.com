@@ -23,9 +23,10 @@ if(strlen($request) > 0)
     $request = explode("/",$request);
     //Table de routage, selon les projets. Classifiés dans html/projects/...
     $routes = array(
-        "anekdotes" => "anekdotes",  //anekdotes
+        "anekdotes" => "front",  //anekdotes
+        "secure" => "anekdotes",  //anekdotes
         "plus" => "plus",  //anekdotes
-        //"setup" => "dbsetup",  //anekdotes
+        "setup" => "dbsetup",  //anekdotes
     );
     //Vérifier si le tableau est assez long
     if(count($request) > 1){
