@@ -1,7 +1,7 @@
 <?php
 	  try {
 	      # MS SQL Server and Sybase with PDO_DBLIB
-        if(is_null($_GET["from"]) || is_null($_GET["reason"]) || $_GET["from"] == "" || $_GET["reason"] == ""){
+        if(is_null($_GET["from"]) || is_null($_GET["reason"]) || is_null($_GET["secure"]) || $_GET["from"] == "" || $_GET["reason"] == "" || $_GET["secure"] != "12345"){
           echo json_encode(array("success" => false));
         }
         else{

@@ -40,6 +40,7 @@
 					data : {
 						from : $("#From").val(),
 						reason : $("#Reason").val(),
+						secure : "12345",
 					},
 					dataType : 'json'
 				})
