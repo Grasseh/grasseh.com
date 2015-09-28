@@ -41,11 +41,13 @@
 						from : $("#From").val(),
 						reason : $("#Reason").val(),
 					},
-					datatype : 'JSON'
+					dataType : 'json'
 				})
 				.done(function(result){
-					($("#" + $("#For").val()).data("count",$("#" + $("#For").val()).data("count")+1));
-					($("#" + $("#For").val()).html($("#" + $("#For").val()).data("count")));
+					if (result.success){
+						($("#" + $("#For").val()).data("count",$("#" + $("#For").val()).data("count")+1));
+						($("#" + $("#For").val()).html($("#" + $("#For").val()).data("count")));
+					}
 				})
 				.fail(function(result){
 					alert("An error has occured");
