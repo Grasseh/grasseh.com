@@ -1,7 +1,7 @@
 <?php
 	  try {
 	      # MS SQL Server and Sybase with PDO_DBLIB
-	      $pdo = new PDO(CONNEXION_STRING,DATABASE_USER,DATABASE_PASSWORD);
+	      $pdo = new PDO(ANEKDOTES_STRING,DATABASE_USER,DATABASE_PASSWORD);
 		    $request = strtolower($_SERVER["REQUEST_URI"]);
    		  $request = explode("/",$request);
    		  $id = array_pop($request);
