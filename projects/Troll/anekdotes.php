@@ -3,7 +3,7 @@
 	try {
 	    # MS SQL Server and Sybase with PDO_DBLIB
 	    //Seed base user
-	    $pdo = new PDO(CONNEXION_STRING,DATABASE_USER,DATABASE_PASSWORD);
+	    $pdo = new PDO(ANEKDOTES_TROLL,DATABASE_USER,DATABASE_PASSWORD);
 
 	    $cmd = $pdo->prepare('SELECT Users.id as id, Users.name as name, COUNT(Trolls.id) as count FROM Users LEFT JOIN Trolls ON Users.id = Trolls.user_id GROUP BY Users.id,Users.name');
 			$cmd->execute();

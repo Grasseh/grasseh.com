@@ -1,5 +1,5 @@
 <?php
-  $pdo = new PDO(CONNEXION_STRING,DATABASE_USER,DATABASE_PASSWORD);
+  $pdo = new PDO(ANEKDOTES_TROLL,DATABASE_USER,DATABASE_PASSWORD);
   //Create tables
   $pdo->exec("CREATE TABLE Trolls (id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, user_id INT, created_at TIMESTAMP)");
     echo("TEST");
