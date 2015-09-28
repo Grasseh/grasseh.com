@@ -25,7 +25,7 @@ if(strlen($request) > 0)
     $routes = array(
         "anekdotes" => "anekdotes",  //anekdotes
         "plus" => "plus",  //anekdotes
-        //"setup" => "dbsetup",  //anekdotes
+        "setup" => "dbsetup",  //anekdotes
     );
     //Vérifier si le tableau est assez long
     if(count($request) > 1){

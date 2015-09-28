@@ -5,9 +5,12 @@
 		    $request = strtolower($_SERVER["REQUEST_URI"]);
    		  $request = explode("/",$request);
    		  $id = array_pop($request);
-	      $cmd = $pdo->prepare('INSERT INTO Trolls(user_id,created_at) VALUES (:id,:time)');
+        $time = date('Y-m-d H:i:s');
+	      $cmd = $pdo->prepare('INSERT INTO Trolls(user_id,created_at,from_user,reason) VALUES (:id,:time,:from_user,:reason)');
   		  $cmd->bindParam(':id', $id, PDO::PARAM_INT);
-        $cmd->bindParam(':time', date('Y-m-d H:i:s'), PDO::PARAM_STR);
+        $cmd->bindParam(':time', $time, PDO::PARAM_STR);
+        $cmd->bindParam(':from_user', $_INPUT["from"], PDO::PARAM_STR);
+        $cmd->bindParam(':reason', $_INPUT["reason"], PDO::PARAM_STR);
 		    $cmd->execute();
 	  }
 	  catch(PDOException $e) {
