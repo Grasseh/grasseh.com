@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="/public/libs/Skeleton/css/normalize.css">
 <link rel="stylesheet" href="/public/libs/Skeleton/css/skeleton.css">
 <link rel="icon" type="image/png" href="/public/images/logo.png">
+<script type="text/javascript" src="/public/libs/jquery.js" ></script>
+<script src="/public/LogParser/js/main.js" ></script>
 </head>
 <body class="container">
 <div class="content">
