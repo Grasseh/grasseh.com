@@ -1,3 +1,3 @@
 config.php
 .DS_STORE
-logs/*
+logs/*.txt
