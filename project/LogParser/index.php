@@ -39,6 +39,7 @@ JSON Log:<br>
     <li>Prettify the table</li>
     <li>Support arrays in data?</li>
     <li>Add some filters to the table</li>
+    <li>Clean up</li>
   </ul>
   </p>
 </body>
