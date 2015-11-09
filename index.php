@@ -1,10 +1,12 @@
 <?php
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
-    include("config.php");
+  include("config.php");
+  include("app/Start.php");
 
 	//Obtenir le chemin de la requête
 	$request = strtolower($_SERVER["REQUEST_URI"]);
+  Log::Info(array("message" => "User loaded a page!!!"));
 	//Retirer la barre oblique à la fin, si nécéssaire
 	if($request[strlen($request)-1] == "/")
 	{
@@ -29,7 +31,7 @@
 		//Vérifier si le tableau existe
 		if(array_key_exists($request[0],$routes))
 		{
-			include("projects/" . $routes[$request[0]] . "/index.php");
+			include("project/" . $routes[$request[0]] . "/index.php");
 		}
 		else
 		{
@@ -40,6 +42,6 @@
 	else
 	{
 		//Aucune requête, rediriger vers index
-		include("projects/Site/index.php");
+		include("project/Site/index.php");
 	}
 ?>
