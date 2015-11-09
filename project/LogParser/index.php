@@ -13,7 +13,7 @@
 <body class="container">
 <div class="content">
 JSON Log:<br>
-<textarea id="log"></textarea><br>
+<textarea id="log" style="width:60%;height:250px;" ></textarea><br>
 <button id="parse">Parse</button>
 </div>
 <div class="dataTablediv">
