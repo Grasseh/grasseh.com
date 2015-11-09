@@ -28,6 +28,17 @@ JSON Log:<br>
   JSON Log Example :<br>
   {"type" : 1, "type_message" : "critical", "date" : "2015-11-15 09:49:12.123 UTC-5", "data" : "2"}<br>
   Any other value than type, type_message and date will be in the same "other keys" column.<br>
+  Each line needs to be its own individual JSON.<br>
+
+  To Do :<br>
+  <ul>
+    <li><strike>Get some object off the JSON</strike></li>
+    <li><strike>Check that the JSON is valid</strike></li>
+    <li><strike>Create a table of the JSON</strike></li>
+    <li>Prettify the table</li>
+    <li>Support arrays in data?</li>
+    <li>Add some filters to the table</li>
+  </ul>
   </p>
 </body>
 </html>
