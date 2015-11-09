@@ -1,7 +1,9 @@
 <?php
   class Log{
     private static function Write($type,$type_message,$data){
-      $date = new DateTime();
+      $t = microtime(true);
+      $micro = sprintf("%06d",($t - floor($t)) * 1000000);
+      $date = new DateTime( date('Y-m-d H:i:s.'.$micro, $t) );
       $object = array("type" => $type,"type_message" => $type_message, "date" => $date->format("Y-m-d H:i:s.u e"));
       foreach($data as $key=>$value){
         $object[$key] = $value;
