@@ -15,7 +15,7 @@
       $data = json_encode($object);
       //Write to file TODO:Make a file per day. Blergh
       $file = 'logs/log.txt' ;
-      file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+      file_put_contents($file, $data . "\n", FILE_APPEND | LOCK_EX);
     }
 
 
