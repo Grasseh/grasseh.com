@@ -2,6 +2,8 @@ Options +FollowSymLinks
 RewriteEngine On
 
 RewriteRule ^public/(.*)$ public/$1 [L]
+RewriteRule ^logs/(.*)$ logs/$1 [L]
 
-RewriteCond %{REQUEST_URI} !^public/ 
+RewriteCond %{REQUEST_URI} !^public/
+RewriteCond %{REQUEST_URI} !^logs/
 RewriteRule ^(.*)$ index.php [L]
