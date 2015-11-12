@@ -7,9 +7,7 @@
 <link rel="stylesheet" href="/public/libs/Skeleton/css/normalize.css">
 <link rel="stylesheet" href="/public/libs/Skeleton/css/skeleton.css">
 <link rel="icon" type="image/png" href="/public/images/logo.png">
-<meta name="google-site-verification" content="doaKtezfSEDsjw8x3InD3wupYZ2qksTtylYsh6LAvHk" />
-</head>
-<body class="container">
+<meta name="google-site-verification" content="5AAUV6kXUaGDfbv0pcyjkZlGkXzefCQJ8-lceyz3eqc" /><body class="container">
 <div class="row top">
   <div class="col-2 no-spacing-column">
   <?php
