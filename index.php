@@ -6,7 +6,6 @@
 
 	//Obtenir le chemin de la requête
 	$request = strtolower($_SERVER["REQUEST_URI"]);
-  Log::Info(array("message" => "User loaded a page!!!"));
 	//Retirer la barre oblique à la fin, si nécéssaire
 	if($request[strlen($request)-1] == "/")
 	{
@@ -31,16 +30,19 @@
 		//Vérifier si le tableau existe
 		if(array_key_exists($request[0],$routes))
 		{
+  		Log::Info(array("message" => "User loaded a page!!!"));
 			include("project/" . $routes[$request[0]] . "/index.php");
 		}
 		else
 		{
 			//Erreur, rediriger vers 404
+			Log::Warn(array("message" => "Error 404. Page not found."));
 			include("404.php");
 		}
 	}
 	else
 	{
+  	Log::Info(array("message" => "User loaded a page!!!"));
 		//Aucune requête, rediriger vers index
 		include("project/Site/index.php");
 	}
