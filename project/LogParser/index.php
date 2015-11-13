@@ -16,6 +16,8 @@ JSON Log:<br>
 <textarea id="log" style="width:60%;height:250px;" ></textarea><br>
 <button id="parse">Parse</button>
 </div>
+<hr>
+<div id="filters"></div>
 <div class="dataTablediv">
 </div>
 <hr><hr><hr>
