@@ -40,7 +40,7 @@ $(function(){
       $(".dataTablediv").html(string);
     }
     catch(err){
-      alert("Le log entré est invalide!");
+      alert("The log entered does not follow the needed format!");
 
     }
   }

@@ -1,7 +1,8 @@
 <?php
 	ini_set('display_errors', 1);
 	error_reporting(E_ALL);
-    include("config.php");
+  include("config.php");
+  include("app/Start.php");
 
 	//Obtenir le chemin de la requête
 	$request = strtolower($_SERVER["REQUEST_URI"]);
@@ -29,17 +30,20 @@
 		//Vérifier si le tableau existe
 		if(array_key_exists($request[0],$routes))
 		{
-			include("projects/" . $routes[$request[0]] . "/index.php");
+  		Log::Info(array("message" => "User loaded a page!!!"));
+			include("project/" . $routes[$request[0]] . "/index.php");
 		}
 		else
 		{
 			//Erreur, rediriger vers 404
+			Log::Warn(array("message" => "Error 404. Page not found."));
 			include("404.php");
 		}
 	}
 	else
 	{
+  	Log::Info(array("message" => "User loaded a page!!!"));
 		//Aucune requête, rediriger vers index
-		include("projects/Site/index.php");
+		include("project/Site/index.php");
 	}
 ?>
