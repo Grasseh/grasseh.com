@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/public/libs/Skeleton/css/skeleton.css">
   <link rel="icon" type="image/png" href="/public/images/logo.png">
   <meta name="google-site-verification" content="5AAUV6kXUaGDfbv0pcyjkZlGkXzefCQJ8-lceyz3eqc" />
-  <meta name="description" content="Steve Gagne's personnal website. Contains various projects and a few unique pages for tests and fun." />
+  <meta name="description" content="Steve Gagné's personnal website. Contains various projects and a few unique pages for tests and fun." />
 </head>
 <body class="container">
   <div class="row top">
