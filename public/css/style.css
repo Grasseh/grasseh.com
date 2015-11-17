@@ -98,3 +98,20 @@
   height: 400px;
 }
 
+h1{
+  color: #225500;
+  font-size: 16pt;
+}
+
+h2{
+}
+
+h2 a{
+  color: #770077;
+  font-size: 15pt;
+  font-weight: bolder;
+}
+
+h2 a:hover{
+  color: #225500;
+}

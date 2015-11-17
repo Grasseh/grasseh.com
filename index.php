@@ -36,8 +36,14 @@
 		else
 		{
 			//Erreur, rediriger vers 404
-			Log::Warn(array("message" => "Error 404. Page not found."));
-			include("404.php");
+			//Check if is favicon
+			if($request[0] == "favicon.ico"){
+				include("public/images/logo.png");
+			}
+			else{
+				Log::Warn(array("message" => "Error 404. Page not found."));
+				include("404.php");
+			}
 		}
 	}
 	else
