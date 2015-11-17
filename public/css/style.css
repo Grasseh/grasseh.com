@@ -115,3 +115,11 @@ h2 a{
 h2 a:hover{
   color: #225500;
 }
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
