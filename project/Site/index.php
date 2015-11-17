@@ -22,7 +22,9 @@
 
 </div>
 <div class="content">
-  This site is currently in construction. Please come back later!
+  <?php
+    include("routes.php");
+  ?>
 </div>
 <?php
   include("footer.php");
