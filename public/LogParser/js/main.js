@@ -1,25 +1,21 @@
 $(function(){
   function parse(){
     var JSONString = $("#log").val();
-    console.dir(JSONString);
     JSONString = JSONString.replace(/{/g,",{");
     JSONString = "[" + JSONString.substr(1) + "]";
-    console.dir(JSONString);
     var message_types = [];
     try{
       var data = $.parseJSON(JSONString);
-      console.dir(data);
       $(".dataTablediv").html("");
       var string = "<table>";
-      string += "<th>Type</th><th>Date</th><th>Other data</th>"
+      string += "<tr id=\"TableTitle\"><th>Type</th><th>Date</th><th>Other data</th></tr>";
       $(data).each(function(index){
         var item = this;
-        console.dir(item);
-        string += "<tr data-row=\" " + index + "\">";
-        string += "<td>";
+        string += "<tr data-row=\"" + index + "\">";
+        string += "<td data-key=\"type-message\">";
         string += item.type_message;
         string += "</td>";
-        string += "<td>";
+        string += "<td data-key=\"date\">";
         string += item.date;
         string += "</td>";
         var first = true;
@@ -28,9 +24,9 @@ $(function(){
           if(key != "type" && key != "type_message" && key != "date")
           {
             if(!first){
-              string += "<tr data-row=\" " + index + "\"><td></td><td></td>"
+              string += "<tr data-row=\"" + index + "\"><td></td><td></td>"
             }
-            string += "<td>";
+            string += "<td data-key=" + key + ">";
             string += "<b>" + key + "</b> : " + item[key];
             string += "</td></tr>";
             first = false;
@@ -39,13 +35,15 @@ $(function(){
           if(key == "type_message")
           {
             //if(NOT IN)
+            if($.inArray(item[key],message_types) == "-1"){
               message_types[message_types.length] = item[key];
+            }
           }
+          //Check for date
           //Check if key exists, add it to filter
         });
       });
       string += "</table>";
-      console.dir(string);
       $(".dataTablediv").html(string);
     }
     catch(err){
@@ -54,7 +52,7 @@ $(function(){
       return false;
     }
     $("#filters").html("");
-    var filters = "<select><option>--Type--</option>";
+    var filters = "<select id=\"filter_type\"><option>--Type--</option>";
     for (var i = 0; i < message_types.length; i++){
       filters += "<option value=\"" + message_types[i] +"\" >" + message_types[i] + "</option>";
     }
@@ -69,7 +67,33 @@ $(function(){
   function bindFilters(){
     $("#filterBtn").unbind("click");
     $("#filterBtn").bind("click",function(){
-      alert("Hello!");
+      //Display all rows
+      $("tr").addClass("hidden");
+      var okArray = [];
+      //Check what the TypeFilter is
+      var TypeFilter = $("#filter_type").val();
+      //Put each OK in OK array
+      $("tr").each(function(){
+        var Okay = false;
+        $(this).children("td").each(function(index,element){
+          if($(element).data("key") == "type-message"){
+            if($(element).html() == TypeFilter){
+              Okay = true;
+            }
+          }
+        });
+        if(Okay){
+          if($.inArray($(this).data("row"),okArray) == "-1"){
+            okArray.push($(this).data("row"));
+          }
+        }
+      });
+      for (var i = 0; i < okArray.length; i++){
+        $("tr[data-row=" + okArray[i] + "]").removeClass("hidden");
+      }
+      $("#TableTitle").removeClass("hidden");
     });
   }
+
+
 });
