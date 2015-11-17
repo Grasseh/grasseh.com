@@ -42,7 +42,8 @@ JSON Log:<br>
     <li><strike>Create a table of the JSON</strike></li>
     <li>Prettify the table</li>
     <li>Support arrays in data?</li>
-    <li>Add some filters to the table</li>
+    <li><strike>Add some filters to the table</strike></li>
+    <li>Add more filters to the table</li>
     <li>Clean up</li>
   </ul>
   </p>
