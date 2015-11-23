@@ -28,7 +28,7 @@ $(function(){
           if(key != "type" && key != "type_message" && key != "date")
           {
             if(!first){
-              string += "<tr data-row=\"" + index + "\"><td data-key=\"type-message\"></td><td data-key=\"date\"></td>"
+              string += "<tr data-row=\"" + index + "\"><td data-key=\"type-message\" data-type=\"" + item.type_message + "\"></td><td data-key=\"date\"></td>"
             }
             string += "<td data-key=" + key + ">";
             string += "<b>" + key + "</b> : " + item[key];
@@ -99,7 +99,7 @@ $(function(){
           //Check the type
           if($(element).data("key") == "type-message"){
             if(TypeFilter != DefaultTypeFilter){
-              if($(element).html() != TypeFilter){
+              if($(element).data("type") != TypeFilter){
                 Okay = false;
               }
             }
@@ -115,6 +115,8 @@ $(function(){
               if($(element).html().indexOf(OtherSearch) == -1){
                 Okay = false;
               }
+              else
+                  console.dir(index);
             }
           }
         });
