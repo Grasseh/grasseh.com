@@ -45,6 +45,7 @@ $(function(){
           }
           else if(key == "type"){}
           //Check for date
+          else if(key == "date"){}
           //Check if key exists, add it to filter
           else
           {
