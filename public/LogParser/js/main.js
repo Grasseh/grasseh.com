@@ -1,9 +1,13 @@
+var DefaultTypeFilter = "--Type--";
+var DefaultOtherFilter = "--Other data--";
+
 $(function(){
   function parse(){
     var JSONString = $("#log").val();
     JSONString = JSONString.replace(/{/g,",{");
     JSONString = "[" + JSONString.substr(1) + "]";
     var message_types = [];
+    var keys_arr = [];
     try{
       var data = $.parseJSON(JSONString);
       $(".dataTablediv").html("");
@@ -24,7 +28,7 @@ $(function(){
           if(key != "type" && key != "type_message" && key != "date")
           {
             if(!first){
-              string += "<tr data-row=\"" + index + "\"><td></td><td></td>"
+              string += "<tr data-row=\"" + index + "\"><td data-key=\"type-message\" data-type=\"" + item.type_message + "\"></td><td data-key=\"date\"></td>"
             }
             string += "<td data-key=" + key + ">";
             string += "<b>" + key + "</b> : " + item[key];
@@ -39,8 +43,16 @@ $(function(){
               message_types[message_types.length] = item[key];
             }
           }
+          else if(key == "type"){}
           //Check for date
+          else if(key == "date"){}
           //Check if key exists, add it to filter
+          else
+          {
+            if($.inArray(key,keys_arr) == "-1"){
+              keys_arr.push(key);
+            }
+          }
         });
       });
       string += "</table>";
@@ -52,11 +64,18 @@ $(function(){
       return false;
     }
     $("#filters").html("");
-    var filters = "<select id=\"filter_type\"><option>--Type--</option>";
+    //TYPE
+    var filters = "<select id=\"filter_type\" value=\"" + DefaultTypeFilter + "\"><option>" + DefaultTypeFilter + "</option>";
     for (var i = 0; i < message_types.length; i++){
       filters += "<option value=\"" + message_types[i] +"\" >" + message_types[i] + "</option>";
     }
-    filters += "</select>";
+    filters += "</select><br/>";
+    //KEYS
+    filters += "<select id=\"filter_other\" value=\"" + DefaultOtherFilter + "\"><option>" + DefaultOtherFilter + "</option>";
+    for (var i = 0; i < keys_arr.length; i++){
+      filters += "<option value=\"" + keys_arr[i] +"\" >" + keys_arr[i] + "</option>";
+    }
+    filters += "</select><input type=\"text\" id=\"filter_other_txt\" /><br>";
     filters += "<button id=\"filterBtn\">Filter</button>";
     $("#filters").html(filters);
     bindFilters();
@@ -72,13 +91,33 @@ $(function(){
       var okArray = [];
       //Check what the TypeFilter is
       var TypeFilter = $("#filter_type").val();
+      var OtherFilter = $("#filter_other").val();
+      var OtherSearch = $("#filter_other_txt").val();
       //Put each OK in OK array
       $("tr").each(function(){
-        var Okay = false;
+        var Okay = true;
         $(this).children("td").each(function(index,element){
+          //Check the type
           if($(element).data("key") == "type-message"){
-            if($(element).html() == TypeFilter){
-              Okay = true;
+            if(TypeFilter != DefaultTypeFilter){
+              if($(element).data("type") != TypeFilter){
+                Okay = false;
+              }
+            }
+          }
+          else if($(element).data("key") == "date"){
+
+          }
+          else{//other data
+            if(OtherFilter != DefaultOtherFilter){
+              if($(element).data("key") != OtherFilter){
+                Okay = false;
+              }
+              if($(element).html().indexOf(OtherSearch) == -1){
+                Okay = false;
+              }
+              else
+                  console.dir(index);
             }
           }
         });
