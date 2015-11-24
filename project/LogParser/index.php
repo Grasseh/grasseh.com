@@ -28,12 +28,19 @@ JSON Log:<br>
 
   Work in Progress.<br><br>
 
-  Current file format takes JSONs.<br>
-  JSON Log Example :<br>
+  Current file format takes JSON objects.<br><br>
+
+  The log format needs to be as following:
+  One different JSON Object per log object. There must not be anything encompassing the objects. The reasoning behind this is simple. While you log, you do not want to recreate your entire log file as a new object (or array). That means you simply add a new line containing a new JSON Object.<br><br>
+
+  JSON Log Example :<br><br>
   {"type" : 1, "type_message" : "critical", "date" : "2015-11-15 09:49:12.123 UTC-5", "data" : "2"}<br>
   {"type" : 4, "type_message" : "warn", "date" : "2015-11-15 19:39:22.323 UTC-5", "data" : "3", "toaster" : "kk"}<br>
+  {"type" : 6, "type_message" : "info", "date" : "2015-11-15 20:39:22.323 UTC-5", "data" : "3", "toaster" : "kk", "message" : "User loaded a log."}<br><br>
+
+
   Any other value than type, type_message and date will be in the same "other keys" column.<br>
-  Each line needs to be its own individual JSON.<br>
+  Each line needs to be its own individual JSON.<br><br>
 
   To Do :<br>
   <ul>

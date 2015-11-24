@@ -16,7 +16,7 @@ $(function(){
       $(data).each(function(index){
         var item = this;
         string += "<tr data-row=\"" + index + "\">";
-        string += "<td data-key=\"type-message\">";
+        string += "<td data-key=\"type-message\" data-type=\"" + item.type_message + "\">";
         string += item.type_message;
         string += "</td>";
         string += "<td data-key=\"date\">";
@@ -117,7 +117,7 @@ $(function(){
                 Okay = false;
               }
               else
-                  console.dir(index);
+                console.dir(index);
             }
           }
         });
