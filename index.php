@@ -26,6 +26,7 @@
             "site" => "Site",  //projects/Site
             "troll" => "Troll",  //projects/Troll
             "logparser" => "LogParser",  //projects/Troll
+            "blog" => "Blog",
         );
 		//Vérifier si le tableau existe
 		if(array_key_exists($request[0],$routes))
