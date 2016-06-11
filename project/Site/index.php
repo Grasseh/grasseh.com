@@ -13,25 +13,20 @@
 </head>
 <body class="container">
   <div class="row top">
-    <div class="col-2 no-spacing-column">
     <?php
       include("header.php");
     ?>
-    </div>
-    <div class="col-10 no-spacing-column">
+  </div>
+  <div class="content">
+<br>
     <?php
       include("menu.php");
     ?>
-    </div>
 
-  </div>
-  <div class="content">
+    <br>
     <?php
       include("routes.php");
     ?>
   </div>
-  <?php
-    include("footer.php");
-  ?>
 </body>
 </html>
