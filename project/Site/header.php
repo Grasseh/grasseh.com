@@ -1,3 +1,5 @@
 <div class="header">
-<img src="/public/images/logo.png" class="logo">
+    <a href="/">
+        <img src="/public/images/logo.png" class="logo">
+   </a>
 </div>
