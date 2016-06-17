@@ -1,3 +1,4 @@
 config.php
 .DS_STORE
 logs/*.txt
+vendor/

@@ -1,16 +1,14 @@
 <?php
-//Routing
+require __DIR__ . '/vendor/autoload.php';
 $request = strtolower($_SERVER["REQUEST_URI"]);
 $matches = [];
 preg_match("/\/blog\/(.+)-.+/",$request,$matches);
-if(count($matches) != 0){
-    include("blogEntry.php");
-}
-else{
 
-$files = scandir('project/Blog/entries/');
-$filteredFiles = array_diff($files,array('..','.'));
-var_dump($filteredFiles);
+//Find file
+$no = glob("project/Blog/entries/" . $matches[1] . "-*.md");
+
+$data = file_get_contents($no[0]);
+$Parsedown = new Parsedown();
 ?>
 <!DOCTYPE>
 <html>
@@ -28,7 +26,9 @@ var_dump($filteredFiles);
   <div class="row top">
     <h1>Blog</h1>
     <br>
-        Welcome to my blog! It contains random diaries about software development and video games.
+        <?php
+            echo $Parsedown->text($data); 
+        ?>
     </br>
   </div>
   <div class="content">
@@ -37,4 +37,3 @@ var_dump($filteredFiles);
   </div>
 </body>
 </html>
-<?php }?> 
