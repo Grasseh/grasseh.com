@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://grasseh.com/</loc>
+    <loc>http://www.grasseh.com/</loc>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://grasseh.com/site/projects</loc>
+    <loc>http://www.grasseh.com/blog</loc>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://grasseh.com/logparser</loc>
+    <loc>http://www.grasseh.com/site/projects</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.grasseh.com/blog/02-Git_Workflow</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.grasseh.com/blog/01-Introduction</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.grasseh.com/logparser</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
