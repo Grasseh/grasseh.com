@@ -10,7 +10,6 @@ else{
 
 $files = scandir('project/Blog/entries/');
 $filteredFiles = array_diff($files,array('..','.'));
-var_dump($filteredFiles);
 ?>
 <!DOCTYPE>
 <html>
@@ -25,13 +24,23 @@ var_dump($filteredFiles);
   <meta name="description" content="Steve Gagné's personnal blog. Contains random diaries about software development and video games.">
 </head>
 <body class="container">
-  <div class="row top">
+    <?php
+        include("project/Site/header.php");
+    ?>
+    <div class="row top">
     <h1>Blog</h1>
     <br>
         Welcome to my blog! It contains random diaries about software development and video games.
     </br>
   </div>
   <div class="content">
+    <?php
+        $filteredFiles = array_reverse($filteredFiles);
+        foreach ($filteredFiles as $file){
+            preg_match("/(.+)-(.+)\.md/",$file,$matches);
+            echo "<a href='/blog/".$matches[1].'-'.$matches[2]."'>".$matches[1]." - " .str_replace('_',' ',$matches[2])."</a><br>";
+        }
+    ?>
     <br>
     <br>
   </div>

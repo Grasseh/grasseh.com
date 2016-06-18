@@ -24,11 +24,18 @@ $Parsedown = new Parsedown();
 </head>
 <body class="container">
   <div class="row top">
+    <div class="row top">
+    <?php
+      include("project/Site/header.php");
+    ?>
+  </div>
     <h1>Blog</h1>
     <br>
+    <div class="BlogText">
         <?php
             echo $Parsedown->text($data); 
         ?>
+    </div>
     </br>
   </div>
   <div class="content">

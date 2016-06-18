@@ -44,4 +44,3 @@ When your blog is completely created, functional and tested, you can merge it in
 That means it is READY for the next version (the one after the current rc). 
 If you need to wait before releasing this, I'd suggest keeping it in its features branch, and then merging it in dev when you want to release it.
 
-I don't currently apply this workflow, but it is what I aim to achieve. 
