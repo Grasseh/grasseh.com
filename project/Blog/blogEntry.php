@@ -2,7 +2,7 @@
 require __DIR__ . '/vendor/autoload.php';
 $request = strtolower($_SERVER["REQUEST_URI"]);
 $matches = [];
-preg_match("/\/blog\/(.+)-.+/",$request,$matches);
+preg_match("/\/blog\/(.+)-(.+)/",$request,$matches);
 
 //Find file
 $no = glob("project/Blog/entries/" . $matches[1] . "-*.md");
@@ -20,6 +20,7 @@ $Parsedown = new Parsedown();
   <link rel="stylesheet" href="/public/libs/Skeleton/css/skeleton.css">
   <link rel="icon" type="image/png" href="/public/images/logo.png">
   <link rel="stylesheet" href="/public/css/style.css">
+  <meta property="og:title" content="<?php echo $matches[2] ?>">
   <meta name="description" content="Steve Gagné's personnal blog. Contains random diaries about software development and video games.">
 </head>
 <body class="container">
