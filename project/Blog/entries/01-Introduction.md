@@ -13,8 +13,8 @@ but Java feels lacking in some areas. I've felt some situations where I wanted t
 There's a few other quirks that irked me, but I can't remember them all, as the last lines of Java I wrote were 3 months ago. 
 
 I really enjoy Python's syntax. I sometimes have issues with indenting, as I tend to be poor at observing things. This leads me to not
-noticing I've got some lines off indentation wise. Python cannot compile such errors, which leads me to fix these issues. 
-The language feels rubust and everything currently feels good while using it. I'm currently using it on CodeWars, to solve issues. 
+noticing I've got some lines off, indentation wise. Python cannot compile these errors, which leads me to fix these issues. 
+The language feels rubust and everything currently feels good while using it. I'm currently using it on CodeWars, to solve katas. 
 
 I'll be using this blog to as a journal, to write my thoughts about the current issues and technologies I'll be facing and using, but
 I'll probably also discuss some video games I'll be playing.

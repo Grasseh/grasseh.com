@@ -33,7 +33,7 @@ All commits on the dev branch should be patches or merges.
 This means that anybody that wants to start working from any point on the dev branch can do so, on a "stable" version.
 
 I've mentionned two other branches in there. 
-These are ephemeral branches. You temporarily create theme, just to delete them when you are done with them
+These are ephemeral branches. You temporarily create them, just to delete them when you are done merging them.
 
 The first of these is the hotfix branch. It is created when an important issue has been raised and must be pushed to production before the next release.
 This branch is created from the current master branch, and when done, is merged into master(with a tag) and into dev.
