@@ -17,7 +17,7 @@ And often, a newer, as interesting, idea drives by. Something that is as interes
 Thus, the started project gets left by, incomplete, as you jump on the new idea.
 And the cycle continues. Over and over again. 
 
-We could blame people for this, but the environment makes it so easy t happen. 
+We could blame people for this, but the environment makes it so easy to happen. 
 There are so many ideas that are made availabl by programming, it doesn't cost a thing to start them and you don't need any social agreement to work on some personal code.
 But when you release it to public, when you sell it, is when I have an issue with it. 
 And it's not only for books. 
