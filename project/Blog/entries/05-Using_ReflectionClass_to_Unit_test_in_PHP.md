@@ -13,22 +13,22 @@ The following class handles the list and has a function to add an attendee, and 
         class AttendeeList
         {
             //Array containing all of attendees
-            private $attendees
+            private $attendees;
 
             //Initializes our list
-            public __construct()
+            public function __construct()
             {
                 $this->attendees = [];
             }
 
             //Adds an attendee in our list
-            public addAttendee($name, $email)
+            public function addAttendee($name, $email)
             {
                 $this->attendees[] = ["name" => $name, "email" => $email]; 
             }
 
             //Sends an email to all of our attendees
-            public sendEmail($email)
+            public function sendEmail($email)
             {
               //The implementation of this function does not matter for this example
             }
@@ -37,7 +37,7 @@ The following class handles the list and has a function to add an attendee, and 
 ```
 
 We currently want to write a unit test for the addAttendee function. 
-The point of this test is to verify that the attendee as currently been added to the list.
+The point of this test is to verify that the attendee has currently been added to the list.
 The issue is, we have no way of easily checking the list, since it is private.
 Let's look at the solutions we have:
 
@@ -69,7 +69,7 @@ Let's look at the basic structure of our test class first :
             //Tests Instance of the class
             public function testInstantiation(){
                 $list = new AttendeeList();
-                $this->assertInstanceOf($list, AttendeeList::class);
+                $this->assertInstanceOf(AttendeeList::class, $list);
             }
 
             //Tests Sending Email
@@ -87,7 +87,7 @@ Let's look at the basic structure of our test class first :
 ```
 
 Our goal is to write a clean testAddAttendee function.
-We'll start by instanciatin it and calling it.
+We'll start by instanciating it and calling it.
 
     $list = new AttendeeList();
     $list->addAttendee('Grase', 'somebody@google.com');
@@ -115,61 +115,62 @@ We now have a ReflectionProperty object.
 It serves the same purpose as the ReflectionClass, but contains informations about the property itself.
 We'll run into an issue fairly quickly though. This property is private.
 We still won't be able to access it.
-Let's change that
+Let's change that.
 
     $reflectionAttendees->setAccessible(true);
   
-Everything is set! Let's now test if our array fits our needs
+Everything is set! Let's now test if our array fits our needs.
 
 ```
     $expected = [["name" => "Grase", "email" => "somebody@google.com"], ["name" => "Jael", "email" => "myname@is.me"]];
-    $this->assertEquals($expected, $reflectionProperty->getValue($list);
+    $this->assertEquals($expected, $reflectionAttendees->getValue($list);
 
 ```
 
-We uses getValue to obtain the private property's value from our object!
+We used getValue to obtain the private property's value from our object.
 Let's mesh all this together into the class.
 
 
 ```
     <?php
-        class AttendeeList
-        {
-            //Array containing all of attendees
-            private $attendees
-
-            //Initializes our list
-            public __construct()
-            {
-                $this->attendees = [];
-            }
-
-            //Adds an attendee in our list
-            public addAttendee($name, $email)
-            {
-                $this->attendees[] = ["name" => $name, "email" => $email]; 
-            }
-
-            //Sends an email to all of our attendees
-            public sendEmail($email)
-            {
-                $list = new AttendeeList();
-                $list->addAttendee('Grase', 'somebody@google.com');
-                $list->addAttendee('Jael', 'myname@is.me');
-                $reflectionList = new \ReflectionClass($list);
-                $reflectionAttendees = $reflectionList->getProperty('attendees');
-                $reflectionAttendees->setAccessible(true);
-                $expected = [["name" => "Grase", "email" => "somebody@google.com"], ["name" => "Jael", "email" => "myname@is.me"]];
-                $this->assertEquals($expected, $reflectionProperty->getValue($list);
-            }
+    class AttendeeListTest extends TestCase
+    {
+        //Tests Instance of the class
+        public function testInstantiation(){
+            $list = new AttendeeList();
+            $this->assertInstanceOf(AttendeeList::class, $list);
         }
+
+        //Tests Sending Email
+        public function testSendEmail(){
+            //This implementation is not important
+        }
+
+        //Tests Adding an attendee to our list
+        public function testAddAttendee(){
+            $list = new AttendeeList();
+            $list->addAttendee('Grase', 'somebody@google.com');
+            $list->addAttendee('Jael', 'myname@is.me');
+            $reflectionList = new \ReflectionClass($list);
+            $reflectionAttendees = $reflectionList->getProperty('attendees');
+            $reflectionAttendees->setAccessible(true);
+            $expected = [["name" => "Grase", "email" => "somebody@google.com"], ["name" => "Jael", "email" => "myname@is.me"]];
+            $this->assertEquals($expected, $reflectionAttendees->getValue($list));
+        }
+    }
     ?>
 ```
 
 And if we run this test in PHPUnit, we get :
 
 ```
+PHPUnit 5.5.0 by Sebastian Bergmann and contributors.
 
+...                                                                 3 / 3 (100%)
+
+Time: 16 ms, Memory: 4.00MB
+
+OK (3 tests, 2 assertions)
 ```
 
 If you want to dive further in Reflection Objects, look up [ReflectionClass on PHP's site](http://php.net/manual/en/class.reflectionclass.php)
