@@ -12,6 +12,16 @@
   <meta name="description" content="This is my custom log parser. It loads a JSON log and puts it in a readable format." />
   <script type="text/javascript" src="/public/libs/jquery.js" ></script>
   <script src="/public/LogParser/js/main.js" ></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70712300-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body class="container">
 <div class="content">
