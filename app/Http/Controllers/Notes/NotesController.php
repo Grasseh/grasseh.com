@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use Parsedown;
 use Session;
 use Config;
-use Input;
+use Redirect;
+use Illuminate\Http\Request;
 
 class NotesController extends Controller
 {
@@ -21,9 +22,9 @@ class NotesController extends Controller
         return view('notes.index',['folders' => $filteredDirectories]);
     }
 
-    public function login()
+    public function login(Request $request)
     {
-        if(Input::get('username','') == Config::get('notes.username') && Input::get('password','') == Config::get('notes.password')){
+        if($request->get('username','') == Config::get('notes.username') && $request->get('password','') == Config::get('notes.password')){
             Session::set('notes_session', Config::get('notes.session'));
         }
         return Redirect::route('notes.index');
