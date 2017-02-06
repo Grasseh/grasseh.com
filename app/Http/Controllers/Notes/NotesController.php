@@ -30,22 +30,34 @@ class NotesController extends Controller
         return Redirect::route('notes.index');
     }
 
-    private function isAuthenticated(){
-        return Session::get('notes_session','') == Config::get('notes.session'); 
+    public function class($dir)
+    {
+        if(!$this->isAuthenticated()){
+            return view('notes.login');   
+        }
+		$directory = scandir('../resources/notes/' . $dir);
+		$filteredFiles = array_diff($directory,array('.gitkeep','..','.'));
+
+        return view('notes.class',['files' => $filteredFiles, 'class' => $dir]);
     }
 
-    public function show($id, $name)
+    public function postFile($dir)
     {
-		$request = strtolower($_SERVER["REQUEST_URI"]);
-		$matches = [];
-		preg_match("/\/blog\/(.+)-(.+)/",$request,$matches);
+    }
 
-		//Find file
-		$no = glob("../resources/blog/entries/" . $matches[1] . "-*.md");
+    public function file($dir, $file)
+    {
+        if(!$this->isAuthenticated()){
+            return view('notes.login');   
+        }
 
-		$data = file_get_contents($no[0]);
+		$data = file_get_contents("../resources/notes/" . $dir . "/" . $file);
 		$Parsedown = new Parsedown();
 
-        return view('blog.entry',['name' => $name, 'content' => $Parsedown->text($data)]);
+        return view('notes.files',['dir' => $dir, 'name' => $file, 'content' => $Parsedown->text($data)]);
+    }
+
+    private function isAuthenticated(){
+        return Session::get('notes_session','') == Config::get('notes.session'); 
     }
 }
