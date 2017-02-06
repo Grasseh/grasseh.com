@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="row top">
-        <h1>{{$class}}</h1>
+        <h1><a href="/notes">{{$class}}</a></h1>
     </div>
 
   <div class="content">
