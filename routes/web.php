@@ -25,4 +25,5 @@ Route::get('blog/{id}-{title}', 'Blog\BlogController@show', 'notes.login');
 Route::get('notes', ['uses' => 'Notes\NotesController@index', 'as' => 'notes.index']);
 Route::post('notes', ['uses' => 'Notes\NotesController@login', 'as' => 'notes.login']);
 Route::get('notes/{dir}', 'Notes\NotesController@class');
+Route::post('notes/{dir}', ['uses' => 'Notes\NotesController@postFile', 'as' => 'notes.addFile']);
 Route::get('notes/{dir}/{file}', 'Notes\NotesController@file');

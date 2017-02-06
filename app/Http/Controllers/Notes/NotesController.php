@@ -41,8 +41,12 @@ class NotesController extends Controller
         return view('notes.class',['files' => $filteredFiles, 'class' => $dir]);
     }
 
-    public function postFile($dir)
+    public function postFile(Request $request, $dir)
     {
+        if ($request->file('file')->isValid()) {
+            $request->file('file')->move("../resources/notes/" . $dir, $request->file('file')->getClientOriginalName());
+        }
+        return Redirect::back();
     }
 
     public function file($dir, $file)

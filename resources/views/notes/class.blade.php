@@ -12,6 +12,11 @@
     </div>
 
   <div class="content">
+    {!! Form::open(['route' => ['notes.addFile',$class], 'files' =>true]) !!}
+    {!! Form::file('file') !!}
+    {!! Form::submit('Add') !!}
+    {!! Form::close() !!}
+    <br>
     @foreach($files as $file)
         <a href="/notes/{{$class}}/{{$file}}">{{$file}}</a> <br>
     @endforeach
