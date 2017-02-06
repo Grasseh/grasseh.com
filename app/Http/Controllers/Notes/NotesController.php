@@ -4,21 +4,33 @@ namespace App\Http\Controllers\Notes;
 
 use App\Http\Controllers\Controller;
 use Parsedown;
+use Session;
+use Config;
+use Input;
 
 class NotesController extends Controller
 {
     public function index()
     {
-		$directory = scandir('../resources/notes/');
-		$filteredDirectories = array_diff($files,array('..','.'));
-
-		$fileLinks = [];
-        foreach ($filteredFiles as $file){
-            preg_match("/(.+)-(.+)\.md/",$file,$matches);
-            $fileLinks[] = "<a href='/blog/".$matches[1].'-'.$matches[2]."'>".$matches[1]." - " .str_replace('_',' ',$matches[2])."</a><br>";
+        if(!$this->isAuthenticated()){
+            return view('notes.login');   
         }
+		$directory = scandir('../resources/notes/');
+		$filteredDirectories = array_diff($directory,array('.gitkeep','..','.'));
 
-        return view('blog.index',['files' => $fileLinks]);
+        return view('notes.index',['folders' => $filteredDirectories]);
+    }
+
+    public function login()
+    {
+        if(Input::get('username','') == Config::get('notes.username') && Input::get('password','') == Config::get('notes.password')){
+            Session::set('notes_session', Config::get('notes.session'));
+        }
+        return Redirect::route('notes.index');
+    }
+
+    private function isAuthenticated(){
+        return Session::get('notes_session','') == Config::get('notes.session'); 
     }
 
     public function show($id, $name)

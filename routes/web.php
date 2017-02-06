@@ -22,6 +22,7 @@ Route::get('/logparser', function () {
 });
 Route::get('blog', 'Blog\BlogController@index');
 Route::get('blog/{id}-{title}', 'Blog\BlogController@show');
-Route::get('notes', 'Notes\NotesController@index');
+Route::get('notes', 'Notes\NotesController@index', 'notes.index');
+Route::post('notes', 'Notes\NotesController@login');
 Route::get('notes/{dir}', 'Notes\NotesController@class');
 Route::get('notes/{dir}/{file}', 'Notes\NotesController@file');
