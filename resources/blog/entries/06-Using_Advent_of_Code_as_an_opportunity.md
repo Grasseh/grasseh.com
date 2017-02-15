@@ -58,6 +58,6 @@ See how fast you can come up with a solution by pitting yourself against other v
 
 Interested?
 You can find Advent of Code at [http://adventofcode.com](http://adventofcode.com).
-If you want to see my Clojure solutions, my code can be found on my [GitHub](http://www.github.com/grasseh.com/adventofcode-2016).
+If you want to see my Clojure solutions, my code can be found on my [GitHub](http://www.github.com/grasseh/adventofcode-2016).
 Previous problems are still available even if you're late.
 You can even access last year's problems if you desire more.
