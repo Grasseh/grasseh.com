@@ -12,7 +12,7 @@
     </div>
 
   <div class="BlogText">
-    {!! $content !!} 
+    {!! nl2br($content) !!}
     <br>
     <br>
   </div>

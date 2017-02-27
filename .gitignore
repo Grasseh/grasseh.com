@@ -7,4 +7,5 @@ Homestead.json
 Homestead.yaml
 .env
 /resources/notes/**/*.md
+/resources/notes/**/*.txt
 *.swp

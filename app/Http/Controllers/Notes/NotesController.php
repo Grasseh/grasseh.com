@@ -56,9 +56,14 @@ class NotesController extends Controller
         }
 
 		$data = file_get_contents("../resources/notes/" . $dir . "/" . $file);
-		$Parsedown = new Parsedown();
+        $ext = pathinfo($file, PATHINFO_EXTENSION);
+        $content = $data;
+        if($ext == "md"){
+            $Parsedown = new Parsedown();
+            $content = $Parsedown->text($data);
+        }
 
-        return view('notes.files',['dir' => $dir, 'name' => $file, 'content' => $Parsedown->text($data)]);
+        return view('notes.files',['dir' => $dir, 'name' => $file, 'content' => $content] );
     }
 
     private function isAuthenticated(){
