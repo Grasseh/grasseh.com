@@ -14,6 +14,7 @@
     ga('send', 'pageview');
 
     </script>
+    <meta name="google-site-verification" content="5AAUV6kXUaGDfbv0pcyjkZlGkXzefCQJ8-lceyz3eqc" />
 </head>
 <body class="container">
   <div class="row top">
