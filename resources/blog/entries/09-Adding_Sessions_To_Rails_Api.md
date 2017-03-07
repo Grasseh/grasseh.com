@@ -36,7 +36,7 @@ But as soon as I read the answers, I was amazed by how mindnumbing some answers 
 
 The top-voted and accepted answer was as follows: 
 "Sessions and Cookies are not supported by default in rails-api. 
-You can easily solve this by simply adding ```RAILS_API=false``` to your application.rb config file."
+You can easily solve this by simply adding ```config.api_only = false``` to your application.rb config file."
 I can't understand how a question asking about how to add sessions in rails_api gets answered by saying to remove the api.
 It's so dense! 
 The reason we're using rails-api in the first place is because it is much more lightweight that the whole Rails framework. 
@@ -46,6 +46,8 @@ Suggested below was a much more reasonable answer.
 It was suggested to add the following lines to the application.rb to add the session only:
 
 ```
+config.middleware.use ActionDispatch::Cookies
+config.middleware.use ActionDispatch::Session::CookieStore
 ```
 
 I went ahead and added it to my config, ran through my routes and... nothing.
@@ -53,7 +55,8 @@ In disarray, I closed the StackOverflow page and went back to Google.
 I found an interesting code snippet with the following lines to be added to appliation.rb:
 
 ```
-
+config.middleware.use ActionDispatch::Cookies
+config.middleware.use ActionDispatch::Session::CookieStore
 ```
 
 Looks familiar?
