@@ -1,10 +1,12 @@
 @extends('layouts.master')
 
-@section('title', 'Blog')
+@section('title')
+    {{ $name }}
+@endsection
 
 @section('head')
     @extends('layouts.masterhead')
-    <meta name="description" content="Steve Gagné's personnal blog. Contains random diaries about software development and video games.">
+    <meta name="description" content="{{ $description }}">
 @endsection
 
 @section('content')

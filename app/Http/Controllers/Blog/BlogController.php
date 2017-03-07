@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Blog;
 
 use App\Http\Controllers\Controller;
 use Parsedown;
+use Symfony\Component\Yaml\Yaml;
 
 class BlogController extends Controller
 {
@@ -27,13 +28,23 @@ class BlogController extends Controller
 		$request = strtolower($_SERVER["REQUEST_URI"]);
 		$matches = [];
 		preg_match("/\/blog\/(.+)-(.+)/",$request,$matches);
+        $id = $matches[1];
 
 		//Find file
-		$no = glob("../resources/blog/entries/" . $matches[1] . "-*.md");
+		$no = glob("../resources/blog/entries/" . $id . "-*.md");
 
 		$data = file_get_contents($no[0]);
 		$Parsedown = new Parsedown();
 
-        return view('blog.entry',['name' => $name, 'content' => $Parsedown->text($data)]);
+        $metadata = file_get_contents("../resources/blog/metadata.yaml");
+        $parsed_metadata = Yaml::parse($metadata);
+
+        $entry_data = array_filter($parsed_metadata['posts'], function($array) use ($id) {
+               return ($array['id'] == intval($id));
+        });
+
+        $entry = array_pop($entry_data);
+
+        return view('blog.entry',['name' => $entry["title"],'description' => $entry['description'], 'content' => $Parsedown->text($data)]);
     }
 }
