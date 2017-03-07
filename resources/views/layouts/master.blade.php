@@ -4,7 +4,6 @@
     <title>Grasseh -- @yield('title')</title>
     <meta charset="utf-8">
     @yield('head')
-    <meta name="description" content="Steve Gagné's personnal website. Contains various projects and a few unique pages for tests and fun." />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
