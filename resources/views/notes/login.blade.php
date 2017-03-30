@@ -13,7 +13,7 @@
 
   <div class="content">
     {!! Form::open(['route' => 'notes.login']) !!}
-    {!! Form::text('username', 'username') !!}
+    {!! Form::text('username', '', ['placeholder' => 'Username']) !!}
     <br>
     {!! Form::password('password') !!}
     <br>
