@@ -26,3 +26,6 @@ posts:
 - id : 9
   title : Adding session to Rails API
   description : Why StackOverflow answers need to be taken with a grain of salt.      
+- id : 10
+  title : Hosting a second project on Apache
+  description : Going through writing a subdomain to host two projects on the same webserver.
