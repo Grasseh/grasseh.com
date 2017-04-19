@@ -11,7 +11,7 @@
         <h1><a href="/notes/{{$dir}}">{{$name}}</a></h1>
     </div>
 
-  <div class="BlogText">
+  <div class="NotesText">
     {!! nl2br($content) !!}
     <br>
     <br>

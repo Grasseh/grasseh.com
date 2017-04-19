@@ -52,3 +52,39 @@ a:hover{
     font-size : 14px;
     margin-left : 20px;
 }
+
+.notesText{
+    text-align:left;
+    width : 90%;
+    font-size : 8px;
+    margin-left : 20px;
+}
+
+.notesText > p{
+    padding-bottom:5px;
+    margin-bottom:5px;
+    line-height:12px;
+}
+
+.notesText > li, ul, ol{
+    padding-bottom:5px;
+    margin-bottom:5px;
+    line-height:7px;
+}
+
+.notesText > h1{
+    font-size : 10px;
+}
+
+.notesText > h2{
+    font-size : 9px;
+}
+
+.notesText > h3{
+    font-size : 8px;
+}
+
+.notesText > h1, h2, h3{
+    letter-spacing: 0rem;
+    font-weight : bold;
+}
