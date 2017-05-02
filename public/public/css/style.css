@@ -80,11 +80,11 @@ a:hover{
     font-size : 9px;
 }
 
-.notesText > h3, h4{
+.notesText > h3, h4, h5{
     font-size : 8px;
 }
 
-.notesText > h1, h2, h3, h4{
+.notesText > h1, h2, h3, h4, h5{
     letter-spacing: 0rem;
     font-weight : bold;
 }
