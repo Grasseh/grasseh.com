@@ -29,3 +29,6 @@ posts:
 - id : 10
   title : Hosting a second project on Apache
   description : Going through writing a subdomain to host two projects on the same webserver.
+- id : 11
+  title : Using variables as keys in Twig arrays.
+  description : Twig, as a templating engine, allows to set arrays straight in your views. It is possible to dynamically assign an array key+value through it.
