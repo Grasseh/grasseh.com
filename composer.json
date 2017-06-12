@@ -9,6 +9,7 @@
         "erusev/parsedown": "^1.6",
         "laravel/framework": "5.3.*",
         "laravelcollective/html": "^5.2.0",
+        "sentry/sentry-laravel": "^0.7.0",
         "symfony/yaml": "^3.2"
     },
     "require-dev": {
