@@ -33,6 +33,10 @@ class BlogController extends Controller
 		//Find file
 		$no = glob("../resources/blog/entries/" . $id . "-*.md");
 
+        //Throw 404 if file is not found or does not exist
+        if(count($no) == 0){
+            abort(404);       
+        }
 		$data = file_get_contents($no[0]);
 		$Parsedown = new Parsedown();
 
