@@ -14,6 +14,16 @@
 <div id="project1" class="project">
   <p>
     <h2>
+      <a href="http://esports.grasseh.com">
+        EsporTS Scouter
+      </a>
+    </h2>
+    A WIP project to scout opposing teams in collegiate matches.
+  </p>
+</div>
+<div id="project2" class="project">
+  <p>
+    <h2>
       <a href="/logparser">
         JSON Log Parser
       </a>
