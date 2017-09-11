@@ -8,7 +8,7 @@
 
 @section('content')
     <p class="index row">
-         Hello, my name is Steve "Grasseh" Gagné, I am a backend developper at <a href="http://www.anekdotes.com">Anekdotes</a>. 
+         Hello, my name is Steve "Grasseh" Gagné, I am an intern in Cloud Software Development at <a href="http://www.autodesk.com">Autodesk Media & Entertainment</a>. 
     <br><br>
         I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and Pokémon.
     <br><br>
