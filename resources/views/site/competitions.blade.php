@@ -16,6 +16,7 @@
         <li class="competition">Dreamhack Montreal (ETS Rust) [LoL] -- 13-16th -- 2017</li>
         <li class="competition">Polybash XVII (ETS Blue) [LoL] -- 2nd place -- 2017</li>
         <li class="competition">Lan ETS 2017 (ETS Blue) [LoL] -- 2017</li>
+        <li class="competition">Gam1ng Cafe Tournament (ETS Blue) [LoL] -- 2nd place -- 2017</li>
         <li class="competition">Collegiate Star League 2016-2017 (ETS Blue) [LoL] -- 2017</li>
         <li class="competition">Polybash XVI (ETS EsporTS) [CSGO] -- 3rd place -- 2016</li>
         <li class="competition">Lan ETS 2016 (ETS EsporTS) [CSGO] -- 2016</li>
