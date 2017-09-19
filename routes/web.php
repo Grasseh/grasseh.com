@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/projects', function () {
     return view('site.projects');
 });
+Route::get('/competitions', function () {
+    return view('site.competitions');
+});
 Route::get('/logparser', function () {
     return view('projects.logparser');
 });
