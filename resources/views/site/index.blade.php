@@ -10,7 +10,7 @@
     <p class="index row">
          Hello, my name is Steve "Grasseh" Gagné, I am an intern in Cloud Software Engineering at <a href="http://www.autodesk.com">Autodesk Media & Entertainment</a>. 
     <br><br>
-    I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and Pokémon. I am <a href="http://esports.etsmtl.ca/"> ÉTS EsporTS' </a> League of Legends coordinator as well as their substitute mid-laner.
+    I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and Pokémon. I am <a href="http://esports.etsmtl.ca/"> ÉTS EsporTS' </a> League of Legends coordinator as well as their starting division 2 mid-laner.
     <br><br>
         You might enjoy reading my <a href="/blog">blog</a>, checking my <a href="/projects">personal projects</a>, looking at the <a href="/competitions">competitions</a> I've taken part in or looking through my <a href="http://www.github.com/grasseh">Github repositories.</a>
     <br><br>
