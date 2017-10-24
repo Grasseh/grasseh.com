@@ -23,7 +23,7 @@ As long as this requirement is met, and the provided contact information is vali
 The first advantage of networking is that you'll have an easier access to this form.
 Being in contact with the guys who make said form means you can ask them for a link instead of going to the proper website, or for an estimation date.
 If your contacts are better, you may even get a tryout without filling the form (both captains seem to allow this). 
-I personally dislike not having the form's information, but the captains feel like they can ask later ¯\_(ツ)_/¯.
+I personally dislike not having the form's information, but the captains feel like they can ask later ¯\\\_(ツ)\_/¯.
 
 The most important part of networking, though, is the first impression you give out.
 If a player's first meeting with the captain is during the tryout, the impression given may not be as good as he'd want.
