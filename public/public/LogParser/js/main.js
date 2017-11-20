@@ -25,7 +25,7 @@ $(function(){
         var first = true;
         Object.keys(item).forEach(function(key) {
           //Create object rows
-          if(key != "type" && key != "type_message" && key != "date")
+          if(is_non_special_data(key))
           {
             if(!first){
               string += "<tr data-row=\"" + index + "\"><td data-key=\"type-message\" data-type=\"" + item.type_message + "\"></td><td data-key=\"date\"></td>"
@@ -132,6 +132,11 @@ $(function(){
       }
       $("#TableTitle").removeClass("hidden");
     });
+  }
+
+  function is_non_special_data(key)
+  {
+    return key != "type" && key != "type_message" && key != "date");
   }
 
 
