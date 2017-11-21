@@ -14,10 +14,10 @@ class NotesController extends Controller
     public function index()
     {
         if(!$this->isAuthenticated()){
-            return view('notes.login');   
+            return view('notes.login');
         }
-		$directory = scandir('../resources/notes/');
-		$filteredDirectories = array_diff($directory,array('.gitkeep','..','.'));
+        $directory = scandir('../resources/notes/');
+        $filteredDirectories = array_diff($directory,array('.gitkeep','..','.'));
 
         return view('notes.index',['folders' => $filteredDirectories]);
     }
@@ -33,10 +33,10 @@ class NotesController extends Controller
     public function class($dir)
     {
         if(!$this->isAuthenticated()){
-            return view('notes.login');   
+            return view('notes.login');
         }
-		$directory = scandir('../resources/notes/' . $dir);
-		$filteredFiles = array_diff($directory,array('.gitkeep','..','.'));
+        $directory = scandir('../resources/notes/' . $dir);
+        $filteredFiles = array_diff($directory,array('.gitkeep','..','.'));
 
         return view('notes.class',['files' => $filteredFiles, 'class' => $dir]);
     }
@@ -52,10 +52,10 @@ class NotesController extends Controller
     public function file($dir, $file)
     {
         if(!$this->isAuthenticated()){
-            return view('notes.login');   
+            return view('notes.login');
         }
 
-		$data = file_get_contents("../resources/notes/" . $dir . "/" . $file);
+        $data = file_get_contents("../resources/notes/" . $dir . "/" . $file);
         $ext = pathinfo($file, PATHINFO_EXTENSION);
         $content = $data;
         if($ext == "md"){
@@ -67,6 +67,6 @@ class NotesController extends Controller
     }
 
     private function isAuthenticated(){
-        return Session::get('notes_session','') == Config::get('notes.session'); 
+        return Session::get('notes_session','') == Config::get('notes.session');
     }
 }
