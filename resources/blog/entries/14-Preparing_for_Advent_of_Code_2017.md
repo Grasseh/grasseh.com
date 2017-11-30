@@ -18,7 +18,7 @@ The only small difference is that I've moved to Python 3 instead of Python 2.7
 I've grown a lot in the past two years.
 I've thus decided to organize my problems differently than two years ago.
 First off, my inputs would still be in an input folder.
-Then, I'd have solvers in a different folder, instead of on the root.
+Then, I'd have solvers in a different folder, instead of at root.
 Finally, I'd have a main script at the root to pick which solver to run.
 This setup leaves me with the following folder schema :
 
@@ -108,7 +108,7 @@ Content of `inputs/day00a.txt` :
 
 Finally, using functional maps, this can easily be solved through a one-liner.
 Sum could be used directly if these were numbers, but they come out as strings.
-The `filter` function if not mandatory and could just be replaced by fn_input, but being safe is nice.
+The `filter` function is not mandatory and could just be replaced by fn_input, but being safe is nice.
 Content of `solvers/day00a.py` :
 
 ```
@@ -119,13 +119,11 @@ def solve(fn_input):
 By running it in by terminal, I can check if this works.
 
 ```
-10:22 - tgagns@tgagns-VirtualBox:~/advent-2017  (master)  python3 main.py
+10:22 - grasseh@grassehLT:~/advent-2017  (master)  python3 main.py
 Welcome to Grasseh's 2017 Advent of Code
 Enter your problem number
 >00a
 The solution to problem 00a is : 21
-
-10:22 - tgagns@tgagns-VirtualBox:~/advent-2017  (master)
 ```
 
 ## Testing the test
@@ -155,7 +153,7 @@ class UnitTest(unittest.TestCase):
 And running tests in the terminal confirms the tests pass.
 
 ```
-10:22 - tgagns@tgagns-VirtualBox:~/advent-2017  (master)  python3 -m unittest discover -s solvers -p '*.py'
+10:22 - grasseh@grassehLT:~/advent-2017  (master)  python3 -m unittest discover -s solvers -p '*.py'
 ..
 ----------------------------------------------------------------------
 Ran 2 tests in 0.000s
