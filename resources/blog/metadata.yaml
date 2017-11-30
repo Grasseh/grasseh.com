@@ -1,31 +1,31 @@
 posts:
 - id : 1
   title : Introduction
-  description : Presenting myself.      
+  description : Presenting myself.
 - id : 2
   title : Git Workflow
-  description : Expressing my thoughts about git branching and workflows.      
+  description : Expressing my thoughts about git branching and workflows.
 - id : 3
   title : Things I want to learn in 2016
-  description : Languages I want to try and mess around with.      
+  description : Languages I want to try and mess around with.
 - id : 4
   title : Not Finishing things
-  description : Discussing motivation.      
+  description : Discussing motivation.
 - id : 5
   title : Using ReflectionClass to UnitTest in PHP
-  description : ReflectionClass allows you to access private class data and allows easy testing.      
+  description : ReflectionClass allows you to access private class data and allows easy testing.
 - id : 6
   title : Using AdventofCode as an opportunity
-  description : How Advent of Code can hone your programming skills.      
+  description : How Advent of Code can hone your programming skills.
 - id : 7
   title : Eliciting EsporTS requirements
-  description : Step-by-step demonstration of figuring out requirements for a student club project.      
+  description : Step-by-step demonstration of figuring out requirements for a student club project.
 - id : 8
   title : Migrating my website to Laravel
-  description : Afterthoughts post-migration to an actual PHP Framework.      
+  description : Afterthoughts post-migration to an actual PHP Framework.
 - id : 9
   title : Adding session to Rails API
-  description : Why StackOverflow answers need to be taken with a grain of salt.      
+  description : Why StackOverflow answers need to be taken with a grain of salt.
 - id : 10
   title : Hosting a second project on Apache
   description : Going through writing a subdomain to host two projects on the same webserver.
@@ -38,3 +38,6 @@ posts:
 - id : 13
   title : Networking and its use in Esports
   description : Where networking can bring you, not only in your job, but in your competitions.
+- id : 14
+  title : Preparing for Advent of Code 2017
+  description : Describing my personal Python setup that will be used in the follow Advent of Code
