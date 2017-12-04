@@ -1,7 +1,7 @@
 <?php
 
 // https://stackoverflow.com/questions/28402726/laravel-5-redirect-to-https
-namespace MyApp\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
 
