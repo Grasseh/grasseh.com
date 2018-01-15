@@ -19,6 +19,13 @@ It feels CRITICAL to treat Advent of Code as a daily task that cannot be delayed
 Although it may be anecdotal, I believe that the event should be treated the same way as forming any other habit.
 Let up one day and it gets 1000 times harder to get back on track.
 
+I've noticed it happen in 2015, when I got hardstuck on the Day 19's puzzle. I had a hard time keeping up afterwards and just gave up on day 21.
+The same thing occured in 2016, as I decided to take a quick day off after messing with some code on Day 6. I never came back to it.
+I've made sure to do every single problem daily this year, and never lost track of it.
+I've also enrolled a friend this year, but the same thing occured for him.
+I got stuck behind in the early days, and the mountain of days ahead demotivated him, rendering him unable to keep up.
+I believe he got around 12 stars, the same amount I got in 2016.
+
 ## Do some early preparation
 
 ## Some days are hard than others
