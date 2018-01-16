@@ -41,3 +41,6 @@ posts:
 - id : 14
   title : Preparing for Advent of Code 2017
   description : Describing my personal Python setup that will be used in the follow Advent of Code
+- id : 15
+  title : Retrospecting on Advent of Code 2017
+  description : Thoughts and reflexions on my 2017 Advent of Code experience.
