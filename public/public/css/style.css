@@ -53,6 +53,10 @@ a:hover{
     margin-left : 20px;
 }
 
+.blogText > h4{
+    font-size : 16px;
+}
+
 .notesText{
     text-align:left;
     width : 90%;
