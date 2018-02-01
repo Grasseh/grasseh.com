@@ -34,8 +34,12 @@ class BlogController extends Controller
 			return (str_slug($array['title']) == ($slug));
 		});
 
-		$entry = array_pop($entry_data);
+		//Throw 404 if no entry matches
+		if(count($entry_data) == 0){
+			abort(404);
+		}
 
+		$entry = array_pop($entry_data);
 		//Find file
 		$no = glob("../resources/blog/entries/*" . $entry['id'] . "-*.md");
 
@@ -60,7 +64,7 @@ class BlogController extends Controller
 				->title($data["title"])
 				->summary($data["description"])
 				->updated(new Carbon($data["date"], "America/New_York"))
-				->link("/blog/" . $id . "-" . str_slug($data["title"]))
+				->link("/blog/" . str_slug($data["title"]))
 				->author("Steve Gagné");
 		}
 		return array_reverse($items);
