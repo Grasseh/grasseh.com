@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eaede286536a9a77e997d172010ce0b5",
-    "content-hash": "df6efd6d59faea8cb5adf801e3aff60d",
+    "hash": "9bcf86ebcd0b3a368783cb0e4f7dcfa5",
+    "content-hash": "9edb60a03932c6b329d290ae3da51066",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1079,64 +1079,75 @@
             "time": "2017-04-21 17:44:27"
         },
         {
-            "name": "simplepie/simplepie",
-            "version": "1.5.1",
+            "name": "spatie/laravel-feed",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "db9fff27b6d49eed3d4047cd3211ec8dba2f5d6e"
+                "url": "https://github.com/spatie/laravel-feed.git",
+                "reference": "d89a39353ba28390703fcc9d8bdfab339ca8418e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/db9fff27b6d49eed3d4047cd3211ec8dba2f5d6e",
-                "reference": "db9fff27b6d49eed3d4047cd3211ec8dba2f5d6e",
+                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/d89a39353ba28390703fcc9d8bdfab339ca8418e",
+                "reference": "d89a39353ba28390703fcc9d8bdfab339ca8418e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "illuminate/support": "~5.5.0",
+                "nesbot/carbon": "^1.0",
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4 || ~5"
-            },
-            "suggest": {
-                "mf2/mf2": "Microformat module that allows for parsing HTML for microformats"
+                "orchestra/testbench": "~3.5.0",
+                "phpunit/phpunit": "^6.0",
+                "spatie/phpunit-snapshot-assertions": "^1.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Feed\\FeedServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "SimplePie": "library"
+                "psr-4": {
+                    "Spatie\\Feed\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Ryan Parman",
-                    "homepage": "http://ryanparman.com/",
-                    "role": "Creator, alumnus developer"
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
                 },
                 {
-                    "name": "Geoffrey Sneddon",
-                    "homepage": "http://gsnedders.com/",
-                    "role": "Alumnus developer"
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
                 },
                 {
-                    "name": "Ryan McCue",
-                    "email": "me@ryanmccue.info",
-                    "homepage": "http://ryanmccue.info/",
+                    "name": "Jolita Grazyte",
+                    "email": "jolita@spatie.be",
+                    "homepage": "https://spatie.be",
                     "role": "Developer"
                 }
             ],
-            "description": "A simple Atom/RSS parsing library for PHP",
-            "homepage": "http://simplepie.org/",
+            "description": "Generates rss feed",
+            "homepage": "https://github.com/spatie/laravel-feed",
             "keywords": [
-                "atom",
-                "feeds",
-                "rss"
+                "laravel",
+                "laravel-feed",
+                "rss",
+                "spatie"
             ],
-            "time": "2017-11-12 02:03:34"
+            "time": "2018-01-30 22:14:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2161,54 +2172,6 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
-        },
-        {
-            "name": "willvincent/feeds",
-            "version": "v1.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/willvincent/feeds.git",
-                "reference": "3b4c8209ac62184e1b4893aafb9abd23fac78a64"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/willvincent/feeds/zipball/3b4c8209ac62184e1b4893aafb9abd23fac78a64",
-                "reference": "3b4c8209ac62184e1b4893aafb9abd23fac78a64",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0",
-                "simplepie/simplepie": "1.5.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "willvincent\\Feeds\\FeedsServiceProvider"
-                    ],
-                    "aliases": {
-                        "Feeds": "willvincent\\Feeds\\Facades\\FeedsFacade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "willvincent\\Feeds\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Will Vincent",
-                    "email": "tcindie@gmail.com"
-                }
-            ],
-            "description": "Laravel 5 Service Provider for the SimplePie library",
-            "time": "2017-09-26 16:24:07"
         }
     ],
     "packages-dev": [

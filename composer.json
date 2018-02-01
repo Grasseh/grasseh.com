@@ -10,8 +10,8 @@
         "laravel/framework": "5.5.*",
         "laravelcollective/html": "^5.2.0",
         "sentry/sentry-laravel": "^0.7.0",
-        "symfony/yaml": "^3.2",
-        "willvincent/feeds": "^1.1"
+        "spatie/laravel-feed": "^2.0",
+        "symfony/yaml": "^3.2"
     },
     "require-dev": {
         "filp/whoops" : "2.1.*",
