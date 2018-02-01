@@ -57,16 +57,17 @@ class BlogController extends Controller
 	public function getFeedItems(){
 		$metadata = file_get_contents("../resources/blog/metadata.yaml");
 		$parsed_metadata = Yaml::parse($metadata);
+		
 		$items = [];
 		foreach($parsed_metadata['posts'] as $id => $data){
 			$items[] = FeedItem::create()
 				->id($id)
 				->title($data["title"])
 				->summary($data["description"])
-				->updated(new Carbon())
+				->updated(new Carbon($data["date"], "America/New_York"))
 				->link("/blog/" . $id . "-" . str_slug($data["title"]))
 				->author("Steve Gagné");
 		}
-		return $items;
+		return array_reverse($items);
 	}
 }
