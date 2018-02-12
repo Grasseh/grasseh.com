@@ -6,69 +6,92 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://www.grasseh.com/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/projects</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/projects</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/09-Adding_Sessions_To_Rails_Api</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/competitions</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.grasseh.com/blog/defining-personal-quarterly-goals</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/08-Migrating_My_Website_To_Laravel</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/retrospecting-on-advent-of-code-2017</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/07-Eliciting_EsporTS_Requirements</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/preparing-for-advent-of-code-2017</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/06-Using_Advent_of_Code_as_an_opportunity</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/networking-and-its-use-in-esports</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/05-Using_ReflectionClass_to_Unit_test_in_PHP</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/using-variables-as-keys-in-twig-arrays</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/04-Not_Finishing_Things</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/migrating-my-website-to-laravel</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/03-Things_I_Want_To_Learn_In_2016</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/eliciting-esports-requirements</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/02-Git_Workflow</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/not-finishing-things</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/blog/01-Introduction</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/things-i-want-to-learn-in-2016</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.grasseh.com/logparser</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.grasseh.com/blog/git-workflow</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.grasseh.com/blog/introduction</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.grasseh.com/logparser</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.grasseh.com/rss/blog/feed</loc>
+  <lastmod>2018-02-12T19:29:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
