@@ -31,3 +31,6 @@ Route::post('notes', ['uses' => 'Notes\NotesController@login', 'as' => 'notes.lo
 Route::get('notes/{dir}', 'Notes\NotesController@class');
 Route::post('notes/{dir}', ['uses' => 'Notes\NotesController@postFile', 'as' => 'notes.addFile']);
 Route::get('notes/{dir}/{file}', 'Notes\NotesController@file');
+Route::get('upload', ['uses' => 'Upload\UploadController@index', 'as' => 'upload.index']);
+Route::post('upload', ['uses' => 'Upload\UploadController@login', 'as' => 'upload.login']);
+Route::post('upload/file', ['uses' => 'Upload\UploadController@postFile', 'as' => 'upload.addFile']);
