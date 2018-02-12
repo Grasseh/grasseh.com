@@ -9,3 +9,4 @@ Homestead.yaml
 /resources/notes/**/*.md
 /resources/notes/**/*.txt
 *.swp
+*.png
