@@ -14,6 +14,24 @@
     RewriteCond %{HTTP_HOST} !^esports\. [NC]
     RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
+    # Redirect old blog handling
+    RedirectMatch 301 /blog/01-Introduction /blog/introduction
+    RedirectMatch 301 /blog/02-Git_Workflow /blog/git-workflow
+    RedirectMatch 301 /blog/03-Things_I_Want_To_Learn_In_2016 /blog/things-i-want-to-learn-in-2016
+    RedirectMatch 301 /blog/04-Not_Finishing_Things /blog/not-finishing-things
+    RedirectMatch 301 /blog/05-Using_ReflectionClass_to_Unit_test_in_PHP /blog/using-reflectionclass-to-unit-test-in-php
+    RedirectMatch 301 /blog/06-Using_Advent_of_Code_as_an_opportunity /blog/using-advent-of-code-as-an-opportunity
+    RedirectMatch 301 /blog/07-Eliciting_EsporTS_Requirements /blog/eliciting-esports-requirements
+    RedirectMatch 301 /blog/08-Migrating_My_Website_To_Laravel /blog/migrating-my-website-to-laravel
+    RedirectMatch 301 /blog/09-Adding_Sessions_To_Rails_Api /blog/adding-sessions-to-rails-api
+    RedirectMatch 301 /blog/10-Hosting_A_Second_Project /blog/hosting-a-second-project
+    RedirectMatch 301 /blog/11-Using_Variables_as_Keys_in_Twig_Arrays /blog/using-variables-as-keys-in-twig-arrays
+    RedirectMatch 301 /blog/12-Monty_Hall_and_Social_Behavior /blog/monty-hall-and-social-behavior
+    RedirectMatch 301 /blog/13-Networking_and_its_use_in_Esports /blog/networking-and-its-use-in-esports
+    RedirectMatch 301 /blog/14-Preparing_for_Advent_of_Code_2017 /blog/preparing-for-advent-of-code-2017
+    RedirectMatch 301 /blog/15-Retrospecting_on_Advent_of_Code_2017 /blog/retrospecting-on-advent-of-code-2017
+    RedirectMatch 301 /blog/16-Defining_Personal_Quarterly_Goals /blog/defining-personal-quarterly-goals
+
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f

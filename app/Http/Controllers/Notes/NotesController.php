@@ -25,7 +25,7 @@ class NotesController extends Controller
     public function login(Request $request)
     {
         if($request->get('username','') == Config::get('notes.username') && $request->get('password','') == Config::get('notes.password')){
-            Session::set('notes_session', Config::get('notes.session'));
+            Session::put('notes_session', Config::get('notes.session'));
         }
         return Redirect::route('notes.index');
     }
