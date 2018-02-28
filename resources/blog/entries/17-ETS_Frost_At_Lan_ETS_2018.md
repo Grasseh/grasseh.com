@@ -14,7 +14,7 @@ Their website can be found [here](https://www.lanets.ca).
 
 EsporTS Frost is the Division 2 LoL team from the ÉTS.
 We're a bunch of students grouped together to participate in League of Legends competitions.
-We bought or tickets for LAN ÉTS back in november.
+We bought or tickets for LAN ÉTS back in November.
 
 The competition is divided in two phases.
 First, all the teams are randomly drafted into pools of seven teams.
@@ -24,7 +24,7 @@ The three best teams of each pool are then seeded in a Single Elimination bracke
 ### Game 1
 
 Our first game was against that was slightly above our level.
-A few hiccups occured during pick and bans on our side, leading to leaving a few power picks open.
+A few hiccups occurred during pick and bans on our side, leading to leaving a few power picks open.
 The biggest mistake I've made was that I somehow didn't save my runes, which left me with Dark Harvest on Lux.
 Comet would have helped secure a few kills and potentially snowball the game in our favor.
 I left the laning phase even instead of ahead, as I was lacking a lot of runes damage in trades.
@@ -79,7 +79,7 @@ I was able to convert my lead into an advantage for our bot lane, which proceede
 Welp, our final opponents were a squad of high Diamonds with a Challenger player.
 Way above our level.
 We ended with a satisfying team composition, and got in the game.
-The other team went for a nasty level 1 invade and a few communication issued lead to our jungler getting caught trying to invade back.
+The other team went for a nasty level 1 invade and a few communication issues lead to our jungler getting caught trying to invade back.
 I was first on the scene, trying to assist, but as we flashed over the dragon pit, we were followed by their level 2 mid-laner, who waited an extra minion to follow my roam, as well as both of their bottom laners.
 Two kills were given to their Challenger jungler in the 2v4, which lead to him styling on us for the next 15 minutes.
 We were able to get a good stall going, gather a few kills, until they just got serious, grabbed baron and ended the game.
@@ -115,7 +115,7 @@ Two, they had a Janna.
 All together, we ended our weekend 3-5, with a few insights on our weaknesses.
 In my opinion, we have a distinct lack of chemistry during our pick & bans phase.
 I do the team scouting, and have a lot of disagreements with our team captain for ban priorities.
-I also believe he never looks further than his viewpoint as an AD Carry, as he wants to ban picks that disables him instead of picks that disable the rest of our team.
+I also believe he never looks further than his viewpoint as an AD Carry, as he wants to ban picks that disable him instead of picks that disable the rest of our team.
 Our support also has issues making quick decisions during the time he should make his champion pick.
 This may slightly be related to a lack of cohesion from the team on which pick should come when.
 I may also put too much importance in obtaining a mid counter-pick.
