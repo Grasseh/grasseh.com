@@ -12,8 +12,8 @@
 }
 
 .logo{
-  width : 100px;
-  height : 100px;
+    width : 100px;
+    height : 100px;
 }
 
 .index{
@@ -23,27 +23,27 @@
 }
 
 a{
-  color : #666666;
+    color : #666666;
 }
 
 a:hover{
-  color : #225500;
+    color : #225500;
 }
 
 .help{
-  line-height: 100px;
+    line-height: 100px;
 }
 
 .helpFooter{
-  line-height: 50px;
+    line-height: 50px;
 }
 
 .hidden{
-  display: none;
+    display: none;
 }
 
 .visible{
-  display: block;
+    display: block;
 }
 
 .blogText{
@@ -95,4 +95,12 @@ a:hover{
 
 .competition{
     padding-bottom: 20px;
+}
+
+.BlogText > p > img {
+    display: block;
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
 }
