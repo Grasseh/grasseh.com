@@ -2,4 +2,4 @@
   <link rel="stylesheet" href="/public/libs/Skeleton/css/normalize.css">
   <link rel="stylesheet" href="/public/libs/Skeleton/css/skeleton.css">
   <link rel="icon" type="image/png" href="/public/images/logo.png">
-  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/style.css?v=1">
