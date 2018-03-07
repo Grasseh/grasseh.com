@@ -17,7 +17,7 @@
 
   <div class="content">
     @foreach($files as $link)
-        {!! $link !!} 
+        {!! $link !!}<br/>
     @endforeach
     <br>
     <br>

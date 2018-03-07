@@ -67,3 +67,7 @@ posts:
   title : ÉTS Frost at Lan ETS 2018
   description : Retrospection on our team results at Lan ÉTS 2018.
   date : "2018-02-27"
+- id : 18
+  title : Git Bisect - Binary Search-based debugging
+  description : Explaining how to use Git Bisect to figure out where a bug was introduced.
+  date : "2018-03-07"
