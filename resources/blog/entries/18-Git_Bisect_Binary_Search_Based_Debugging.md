@@ -1,11 +1,11 @@
 # Git Bisect - Binary Search-based Debugging
 ------------
 
-###### Tuesday March 13, 2018
+###### Wednesday March 7th, 2018
 
 ### Introduction
 
-I've been using `git bisect` here and there for the past two years and every time I mentionned the command, everyone looked at me like I was some kind of maniac using some black wizard optimization magic.
+I've been using `git bisect` here and there for the past two years and every time I mentioned the command, everyone looked at me like I was some kind of maniac using some black wizard optimization magic.
 It is a similar look that I also get when I first tell someone that uses Sublime/Atom/VisualCode/VisualStudio/AnyJetBrainsIDE that I use Vim for all of my text-editing.
 The difference is, `git bisect` doesn't require a rocket science certificate.
 Of course, this is an hyperbole, as I believe it takes less than a month to become more productive with Vim than with other editors.
@@ -13,15 +13,15 @@ But my point is, `git bisect` is a simple tool that comes packaged with Git and 
 It may not always be the best tool (it is overkill for some simple bugs), and has a few caveats (which will be noted at the bottom of this post), but it's a great way to quickly find a bug that may have been in the codebase for a while.
 
 This post will include a small Python example to bring more life to the subject.
-For simplicity, the example has a few noticable flaws (even the context is flawed).
+For simplicity, the example has a few noticeable flaws (even the context is flawed).
 The goal is to display how `git bisect` is used, and how simple it can be used as a tool.
-Note that this exemple uses unit tests to check if the current commit is bugged, but in reality, a manual check can also do the job if the bug has no code coverage.
+Note that this example uses unit tests to check if the current commit is bugged, but in reality, a manual check can also do the job if the bug has no code coverage.
 
 ### Problem Context
 
 For this example, I wrote a small Python script that multiplies two positive integers through an additive loop.
 It worked at the beginning, and I created a unit test that passes.
-Somehow, a few cleanup commits later, I forgot to run my tests before commiting (Oops, I'm lightheaded).
+Somehow, a few cleanup commits later, I forgot to run my tests before committing (Oops, I'm lightheaded).
 Sadly, the tests do not pass on my code right now.
 Here's the code (I did not attempt to hide the code error in any way, but I'll act as if I've got no clue about what I've done) :
 ```py
@@ -109,7 +109,7 @@ Bisecting: 1 revision left to test after this (roughly 1 step)
 ```
 
 If you pay close attention to the end of the example, and compare it to the git tree I gave earlier, you may notice that git automatically checks out the commit at the middle of the tree.
-The goal of this is to check a smaller amount of commits, to find the first one where the bug started occuring.
+The goal of this is to check a smaller amount of commits, to find the first one where the bug started occurring.
 By running our tests until the bisect ends, git will provide us with this root-cause commit.
 We'll need to run it around `log2(n)` times, where `n` is the amount of commits in-between our first bad and our first good commit.
 This means that if you double the amount of commits, you'll need to test 1 more commit.
@@ -223,7 +223,7 @@ There are a few instances, though, where `git bisect` may not be the best tool f
 It may have been slightly overkill for this use-case, for example, where the code is really small and a basic manual code-check could've figured it out.
 
 In situations where commits do not follow a standardized guideline, it may also prove pointless.
-For exemple, if your project consists of 8-9 commits that are huge (+/- 1000 line changes each), even finding the root commit won't be much help, as there are many possible bugs in the found commit and you won't be easily spot what you're looking for through a diff.
+For example, if your project consists of 8-9 commits that are huge (+/- 1000 line changes each), even finding the root commit won't be much help, as there are many possible bugs in the found commit and you won't be easily spot what you're looking for through a diff.
 
 In other situations, running tests may cost a lot, or take a lot of time, due to environment constraints (databases, virtual server connections). In these scenarios, it may feel unrealistic to run the tests back-to-back.
 

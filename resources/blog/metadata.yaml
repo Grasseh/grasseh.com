@@ -70,4 +70,4 @@ posts:
 - id : 18
   title : Git Bisect - Binary Search-based debugging
   description : Explaining how to use Git Bisect to figure out where a bug was introduced.
-  date : "2018-03-13"
+  date : "2018-03-07"
