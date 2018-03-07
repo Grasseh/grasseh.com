@@ -6,19 +6,20 @@
 ### Introduction
 
 I've been using `git bisect` here and there for the past two years and every time I mentionned the command, everyone looked at me like I was some kind of maniac using some black wizard optimization magic.
-It is a similar look that when I first tell someone that uses Sublime/Atom/VisualCode/VisualStudio/AnyJetBrainsIDE that I use VIM for all of my text-editing.
+It is a similar look that I also get when I first tell someone that uses Sublime/Atom/VisualCode/VisualStudio/AnyJetBrainsIDE that I use Vim for all of my text-editing.
 The difference is, `git bisect` doesn't require a rocket science certificate.
-Of course, this is an hyperbole, as I believe it takes less than a month using Vim to become more productive than with other editors.
-But my point is, `git bisect` is a simple tool that comes packaged with Git and is a great tool in any toolbox.
-It may not always be the best tool (it is overkill for some simple bugs), and it has a few caveats (which will be noted at the bottom of this post), but it's a great way to quickly find a bug that may have been in the codebase for a while.
+Of course, this is an hyperbole, as I believe it takes less than a month to become more productive with Vim than with other editors.
+But my point is, `git bisect` is a simple tool that comes packaged with Git and is a great command in any software skillset.
+It may not always be the best tool (it is overkill for some simple bugs), and has a few caveats (which will be noted at the bottom of this post), but it's a great way to quickly find a bug that may have been in the codebase for a while.
 
 This post will include a small Python example to bring more life to the subject.
 For simplicity, the example has a few noticable flaws (even the context is flawed).
 The goal is to display how `git bisect` is used, and how simple it can be used as a tool.
+Note that this exemple uses unit tests to check if the current commit is bugged, but in reality, a manual check can also do the job if the bug has no code coverage.
 
 ### Problem Context
 
-For this example, I wrote a small python script that multiplies two positive integers through an additive loop.
+For this example, I wrote a small Python script that multiplies two positive integers through an additive loop.
 It worked at the beginning, and I created a unit test that passes.
 Somehow, a few cleanup commits later, I forgot to run my tests before commiting (Oops, I'm lightheaded).
 Sadly, the tests do not pass on my code right now.
@@ -167,3 +168,64 @@ Welp, seems like git found our commit for us.
 Seems like `7356cfbe906cc45ed97e0c41bb266a3556a8ea24 is the first bad commit`
 
 ### Fixing the bug
+
+First off, we're still on the bisect commit and "bisecting".
+Let's end this off with a `git bisect reset` to get back to our initial state (which was a checkout on the master branch).
+Afterwards, we can check what were the changes done in the problematic commit with `git show <hash>`.
+
+```
+20:37 - grasseh@grasseh-LT:~/projects/multiplier  ((7356cfb...)|BISECTING)  git bisect reset
+Previous HEAD position was 7356cfb... Add spaces after commas
+Switched to branch 'master'
+
+20:38 - grasseh@grasseh-LT:~/projects/multiplier  (master)  git show 7356cfb
+commit 7356cfbe906cc45ed97e0c41bb266a3556a8ea24
+Author: Grasseh <steve@grasseh.com>
+Date:   Tue Mar 6 19:11:20 2018 -0500
+
+    Add spaces after commas
+
+diff --git a/main.py b/main.py
+index 7e45963..3af533a 100644
+--- a/main.py
++++ b/main.py
+@@ -4,11 +4,11 @@ import unittest
+ def multiply(a, b):
+     c = 0
+     # Add b to its sum a time
+-    for i in range (0,a):
++    for i in range (1, a):
+         c = c + b
+     return c
+ 
+ class UnitTest(unittest.TestCase):
+     # Test that two positive integers match their multiple
+     def testMultiply(self):
+-        self.assertEqual(6, multiply(2,3))
++        self.assertEqual(6, multiply(2, 3))
+
+20:39 - grasseh@grasseh-LT:~/projects/multiplier  (master)  
+```
+
+As we can see here, somehow, when adding spaces after comma, a 0 was changed for a 1. 
+We'll just need to change it on master, commit the new bugfix and push it.
+Or do whatever our git workflow is with hotfix branches, as if we just fixed a normal bug
+
+### Conclusion and Caveats
+
+The great thing about `git bisect` is that it allows to quickly find a root commit, even through a lot of commits.
+The logarithmic nature of binary-search allows a bisect of 100 commits to be done in 8-9 tests. 
+1000 commits can be done in 11-12 tests.
+For those not used to binary-searches, testing at the middle of a set just cuts the set in two.
+Cutting a set of 1000 down to 500 takes only one step, and getting it down to around 100 (125) take 3.
+
+There are a few instances, though, where `git bisect` may not be the best tool for the job.
+It may have been slightly overkill for this use-case, for example, where the code is really small and a basic manual code-check could've figured it out.
+
+In situations where commits do not follow a standardized guideline, it may also end pointless.
+For exemple, if your project consists of 8-9 commits that are huge (+/- 1000 line changes each), even finding the root commit won't be much help, as there are many possible bugs in the found commit.
+
+In other situations, running tests may cost a lot, or take a lot of time, due to environment constraints (databases, virtual server connections). In these scenarios, it may feel unrealistic to run the tests back-to-back.
+
+Finally, if the bug is a regression (a bug that was fixed at some point), `git bisect` may provide odd results.
+If the bisect is started before the first time the bug was found instead of in between when it was fixed and between the regression's first appearance, it will point to the root of the first appearance, which may be a different cause than the actual regression (even if the symptoms are the same).
