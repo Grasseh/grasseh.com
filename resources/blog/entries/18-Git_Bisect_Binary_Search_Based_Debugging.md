@@ -197,24 +197,24 @@ index 7e45963..3af533a 100644
 +    for i in range (1, a):
          c = c + b
      return c
- 
+
  class UnitTest(unittest.TestCase):
      # Test that two positive integers match their multiple
      def testMultiply(self):
 -        self.assertEqual(6, multiply(2,3))
 +        self.assertEqual(6, multiply(2, 3))
 
-20:39 - grasseh@grasseh-LT:~/projects/multiplier  (master)  
+20:39 - grasseh@grasseh-LT:~/projects/multiplier  (master)
 ```
 
-As we can see here, somehow, when adding spaces after comma, a 0 was changed for a 1. 
+As we can see here, somehow, when adding spaces after comma, a 0 was changed for a 1.
 We'll just need to change it on master, commit the new bugfix and push it.
-Or do whatever our git workflow is with hotfix branches, as if we just fixed a normal bug
+Or do whatever our git workflow specifies, by using hotfix branches, as if we just fixed a normal bug.
 
 ### Conclusion and Caveats
 
 The great thing about `git bisect` is that it allows to quickly find a root commit, even through a lot of commits.
-The logarithmic nature of binary-search allows a bisect of 100 commits to be done in 8-9 tests. 
+The logarithmic nature of binary-search allows a bisect of 100 commits to be done in 8-9 tests.
 1000 commits can be done in 11-12 tests.
 For those not used to binary-searches, testing at the middle of a set just cuts the set in two.
 Cutting a set of 1000 down to 500 takes only one step, and getting it down to around 100 (125) take 3.
@@ -222,8 +222,8 @@ Cutting a set of 1000 down to 500 takes only one step, and getting it down to ar
 There are a few instances, though, where `git bisect` may not be the best tool for the job.
 It may have been slightly overkill for this use-case, for example, where the code is really small and a basic manual code-check could've figured it out.
 
-In situations where commits do not follow a standardized guideline, it may also end pointless.
-For exemple, if your project consists of 8-9 commits that are huge (+/- 1000 line changes each), even finding the root commit won't be much help, as there are many possible bugs in the found commit.
+In situations where commits do not follow a standardized guideline, it may also prove pointless.
+For exemple, if your project consists of 8-9 commits that are huge (+/- 1000 line changes each), even finding the root commit won't be much help, as there are many possible bugs in the found commit and you won't be easily spot what you're looking for through a diff.
 
 In other situations, running tests may cost a lot, or take a lot of time, due to environment constraints (databases, virtual server connections). In these scenarios, it may feel unrealistic to run the tests back-to-back.
 
