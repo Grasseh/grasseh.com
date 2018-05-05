@@ -38,4 +38,17 @@ class UploadController extends Controller
     private function isAuthenticated(){
         return Session::get('upload_session','') == Config::get('upload.session');
     }
+
+    public function links(){
+        if(!$this->isAuthenticated()){
+            return view('upload.login');
+        }
+        $files = scandir('images/');
+        $filteredFiles = array_diff($files,array('..','.','.gitkeep'));
+        $fileLinks = [];
+        foreach($filteredFiles as $file){
+            $fileLinks[] = sprintf("<a href='/images/%s'>%s</a>",$file,$file); 
+        }
+        return view('upload.links', ['files' => $fileLinks]);
+    }
 }
