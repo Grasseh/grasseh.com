@@ -13,7 +13,7 @@
 <hr>
 <div id="competitions" class="competitions">
     <ul>
-        <li class="competition">AVGL College 2018 (ETS Frost) [LoL] -- 2018</li>
+        <li class="competition">AVGL College 2018 (ETS Frost) [LoL] -- 9th-16th (~80 teams) -- 2018</li>
         <li class="competition">Collegiate Star League 2018 (ETS Frost) [LoL] -- 16-32th (>250 teams) -- 2018</li>
         <li class="competition">Lan ETS 2018 (ETS Frost) [LoL] -- 3-5 -- 2018</li>
         <li class="competition">Dreamhack Montreal (ETS Rust) [LoL] -- 13-16th -- 2017</li>
