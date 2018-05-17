@@ -8,7 +8,7 @@
 
 @section('content')
     <p class="index row">
-         Hello, my name is Steve "Grasseh" Gagné, I am a student in Software Engineering at <a href="http://www.etsmtl.ca">École de Technologie Supérieure</a> and an interm atat <a href="http://www.autodesk.com">Autodesk Media & Entertainment</a>. 
+         Hello, my name is Steve "Grasseh" Gagné, I am a student in Software Engineering at <a href="http://www.etsmtl.ca">École de Technologie Supérieure</a> and an intern at <a href="http://www.autodesk.com">Autodesk Media & Entertainment</a>. 
     <br><br>
     I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and Pokémon. I am <a href="http://esports.etsmtl.ca/"> ÉTS EsporTS' </a> League of Legends coordinator as well as their starting division 2 mid-laner.
     <br><br>
