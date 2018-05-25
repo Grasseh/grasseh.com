@@ -11,7 +11,7 @@ class LogRequest {
     public function handle($request, Closure $next)
     {
         $object = ['path' => $request->path(), 'ip' => $request->ip()];
-        Log::info(json_encode($object));
+        Log::info("Request", $object);
         return $next($request);
     }
 }

@@ -1,5 +1,7 @@
 <?php
 use Monolog\Handler\StreamHandler;
+$date = date("Ymd");
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -33,8 +35,8 @@ return [
         ],
         'single' => [
             'driver' => 'single',
-            'tap' => [Monolog\Formatter\JsonFormatter::class],
-            'path' => storage_path('logs/laravel.log'),
+            'tap' => [App\Logging\JsonFormatter::class],
+            'path' => storage_path('logs/' . $date . '.log'),
             'level' => 'debug',
         ],
     ],
