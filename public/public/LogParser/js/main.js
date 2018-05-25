@@ -4,8 +4,8 @@ var DefaultOtherFilter = "--Other data--";
 $(function(){
     function parse(){
         var JSONString = $("#log").val();
-        JSONString = JSONString.replace(/{/g,",{");
-        JSONString = "[" + JSONString.substr(1) + "]";
+        JSONString = JSONString.replace(/[^:]{/g,",{");
+        JSONString = "[" + JSONString + "]";
         var message_types = [];
         var keys_arr = [];
         try{
