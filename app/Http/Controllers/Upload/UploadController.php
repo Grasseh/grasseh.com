@@ -57,11 +57,19 @@ class UploadController extends Controller
             return view('upload.login');
         }
         $files = scandir('../storage/logs/');
-        $filteredFiles = array_diff($files,array('..','.','.gitkeep'));
+        $filteredFiles = array_diff($files,array('..','.','.gitignore','.gitkeep'));
         $fileLinks = [];
         foreach($filteredFiles as $file){
-            $fileLinks[] = sprintf("<a href='/logs/%s'>%s</a>",$file,$file);
+            $fileLinks[] = sprintf("<a href='/upload/logs/%s'>%s</a>",$file,$file);
         }
         return view('upload.links', ['files' => $fileLinks]);
+    }
+
+    public function log($file){
+        if(!$this->isAuthenticated()){
+            return view('upload.login');
+        }
+        $file = file_get_contents('../storage/logs/' . $file);
+        return $file;
     }
 }
