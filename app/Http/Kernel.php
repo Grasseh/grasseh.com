@@ -32,6 +32,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             //custom
             \App\Http\Middleware\ForceHttps::class,
+            \App\Http\Middleware\LogRequest::class,
         ],
 
         'api' => [
