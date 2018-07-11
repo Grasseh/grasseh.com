@@ -71,3 +71,7 @@ posts:
   title : Git Bisect - Binary Search-based debugging
   description : Explaining how to use Git Bisect to figure out where a bug was introduced.
   date : "2018-03-07"
+- id : 19
+  title : My first campaign as a Dungeon Master
+  description : Early takeaways of the first Dungeon and Dragons campaign I'm running.
+  date : "2018-07-12"
