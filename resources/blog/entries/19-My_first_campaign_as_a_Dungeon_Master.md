@@ -20,7 +20,7 @@ I now listen to three different D&D podcasts and started hosting my first campai
 #### Don't stick to the "rules"
 
 I mentioned earlier that my boss spent a lot of time telling me his D&D stories.
-I didn't mention that at some point, they switched to another Tabletop Roleplaying Game system (I believe it was named Vamp).
+I didn't mention that at some point, they switched to another Tabletop Roleplaying Game system (I believe it was named Vamp[1]).
 One of the reason he gave me for switching (other than their familiarity and how the like that other system) was that they did not enjoy looking for rules about everything.
 Most of their sessions were searching for stuff in the Handbook.
 
@@ -103,3 +103,7 @@ If any player is not having fun, tell him to come forward and express his concer
 As a Dungeon Master, your goal is to make sure every player is enjoying himself.
 Don't take this as giving them all they want, though.
 A challenge is way more enjoyable than having everything given to you, as overcoming the challenge provides way greater feelings!
+
+Edits :
+
+[1] -- Actually is called World of Darkness
