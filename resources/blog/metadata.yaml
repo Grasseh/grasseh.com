@@ -75,3 +75,7 @@ posts:
   title : My first campaign as a Dungeon Master
   description : Early takeaways of the first Dungeon and Dragons campaign I'm running.
   date : "2018-07-12"
+- id : 20
+  title : Using Vim Macros
+  description : Descriptive example on how using vim macros can help during a workflow.
+  date : "2018-08-15"
