@@ -23,6 +23,9 @@ Route::get('/competitions', function () {
 Route::get('/logparser', function () {
     return view('projects.logparser');
 });
+Route::get('/hall-of-fame', function () {
+    return view('projects.halloffame');
+});
 Route::get('blog', 'Blog\BlogController@index');
 Route::get('blog/{slug}', 'Blog\BlogController@showBySlug');
 Route::feeds('rss');
