@@ -79,3 +79,7 @@ posts:
   title : Using Vim Macros
   description : Descriptive example on how using vim macros can help during a workflow.
   date : "2018-08-17"
+- id : 21
+  title : ES6 Features I wish to learn
+  description : Advent of Code is coming soon, here's a list of a few features I want to try out this year in ES6.
+  date : "2018-10-30"
