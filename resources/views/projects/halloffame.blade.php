@@ -55,6 +55,15 @@
         <li> Rasle -- Decidueye</li>
         <li> Shaiy -- Shiinotic</li>
     </ul>
+    <h3> Let's Go Eevee </h3>
+    <ul>
+        <li> Ponel -- Venusaur -- Lv 59</li>
+        <li> Pames -- Parasect -- Lv 58</li>
+        <li> Dotax -- Victreebel -- Lv 59</li>
+        <li> Satpp -- Tangela -- Lv 57</li>
+        <li> Ionam -- Exeggutor -- Lv 59</li>
+        <li> Nilaf -- Vileplume -- Lv 63</li>
+    </ul>
     <h2> Bug </h2>
 </div>
 @endsection

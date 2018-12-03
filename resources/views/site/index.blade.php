@@ -10,7 +10,7 @@
     <p class="index row">
          Hello, my name is Steve "Grasseh" Gagné, I am a student in Software Engineering and a TA at <a href="http://www.etsmtl.ca">École de Technologie Supérieure</a>.
     <br><br>
-    I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and Pokémon. I am <a href="http://esports.etsmtl.ca/"> ÉTS EsporTS' </a> League of Legends coordinator as well as their starting division 2 mid-laner.
+    I enjoy playing video games, such as <a href="http://na.op.gg/summoner/userName=grasseh"> League of Legends</a> and <a href="/hall-of-fame">Pokémon</a>. 
     <br><br>
         You might enjoy reading my <a href="/blog">blog</a>, checking my <a href="/projects">personal projects</a>, looking at the <a href="/competitions">competitions</a> I've taken part in or looking through my <a href="http://www.github.com/grasseh">Github repositories.</a>
     <br><br>

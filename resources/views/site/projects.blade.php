@@ -11,14 +11,14 @@
   Projects
 </h1>
 <hr>
-<div id="project1" class="project">
+<div id="project2" class="project">
   <p>
     <h2>
-      <a href="http://esports.grasseh.com">
-        EsporTS Scouter
+      <a href="https://www.github.com/grasseh/muffle">
+        Muffle
       </a>
     </h2>
-    A WIP project to scout opposing teams in collegiate matches.
+    A Discord bot that allows to muffle someone's speech. Meant for use in roleplays.
   </p>
 </div>
 <div id="project2" class="project">
