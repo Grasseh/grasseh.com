@@ -14,11 +14,31 @@
 <div id="project2" class="project">
   <p>
     <h2>
+      <a href="https://www.github.com/grasseh/ba-bot">
+        BA-Bot (18+)
+      </a>
+    </h2>
+    A Discord bot to allow duels through a pretty <em>restrictive</em> framework.
+  </p>
+</div>
+<div id="project2" class="project">
+  <p>
+    <h2>
+      <a href="https://www.github.com/grasseh/taffee">
+        Taffee
+      </a>
+    </h2>
+    A NodeJS-built test framework which converts and runs Markdown-based test suites, converting them to an HTML format for non-tech clients.
+  </p>
+</div>
+<div id="project2" class="project">
+  <p>
+    <h2>
       <a href="https://www.github.com/grasseh/muffle">
         Muffle
       </a>
     </h2>
-    A Discord bot that allows to muffle someone's speech. Meant for use in roleplays.
+    Silence your friends in Discord with this bot.
   </p>
 </div>
 <div id="project2" class="project">
