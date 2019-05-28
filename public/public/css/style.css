@@ -104,3 +104,7 @@ a:hover{
     width: auto;
     height: auto;
 }
+
+.smaller{
+    font-size : 20px;
+}

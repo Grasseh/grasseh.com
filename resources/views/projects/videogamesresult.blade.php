@@ -9,7 +9,7 @@
 @section('content')
 <div class="content">
     <h1> Video Game Playthrough Archive </h1>
-    <h2> Pokemon TCG 2 : GR - Fan Translation - 2019-05-28 </h2>
+    <h2 class="smaller"> Pokemon TCG 2 : GR - Fan Translation - 2019-05-28 </h2>
     <ul>
         <li>Ekans Lv15 x4</li>
         <li>Dark Arbok Lv25 x2</li>
@@ -27,7 +27,7 @@
         <li>Grass Energy x26</li>
     </ul>
 
-    <h2> Fire Emblem Awakening -- Normal Classic - 2019-03-01 </h2>
+    <h2 class="smaller"> Fire Emblem Awakening -- Normal Classic - 2019-03-01 </h2>
     <ul>
         <li>Tharja 131</li>
         <li>Morgan 105</li>
