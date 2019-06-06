@@ -47,5 +47,20 @@
         <li>Lissa 10</li>
         <li>Olivia 0</li>
     </ul>
+
+    <h2 class="smaller"> Fire Emblem Blazing Blade -- Normal Eliwood Mode - 2019-xx-xx </h2>
+    <ul>
+        <li>Sain (41)</li>
+        <li>Kent (40)</li>
+        <li>Rath (22)</li>
+        <li>Lyn (21)</li>
+        <li>Lucius (13)</li>
+        <li>Serra (0)</li>
+        <li>Nils+Ninian (0)</li>
+    </ul>
 </div>
+    </ul>
+</div>
+@endsection
+
 @endsection
