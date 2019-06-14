@@ -69,8 +69,4 @@
         <li>Nils + Ninian (000){00 + 00}     [Lv 20 - 31 - 01 - 00 - 26 - 25 - 12 - 19]</li>
     </ul>
 </div>
-    </ul>
-</div>
-@endsection
-
 @endsection
