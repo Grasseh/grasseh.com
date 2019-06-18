@@ -45,6 +45,15 @@
         <li> Soppe -- Serperior -- Lv 50</li>
         <li> Thror -- Ferrothorn -- Lv 51</li>
     </ul>
+    <h3> X </h3>
+    <ul>
+        <li> Artya -- Roserade -- Lv 71</li>
+        <li> Nacre -- Chesnaught -- Lv 71</li>
+        <li> Laoud -- Gogoat -- Lv 71</li>
+        <li> Argaw -- Ludicolo -- Lv 71</li>
+        <li> Ionam -- Exeggutor -- Lv 71</li>
+        <li> Thror -- Ferrothorn -- Lv 73</li>
+    </ul>
     <h3> Moon </h3>
     ** No levels because no Hall of Fame -.-
     <ul>

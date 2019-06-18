@@ -70,12 +70,6 @@ a:hover{
     line-height:12px;
 }
 
-.notesText > li, ul, ol{
-    padding-bottom:5px;
-    margin-bottom:5px;
-    line-height:7px;
-}
-
 .notesText > h1{
     font-size : 10px;
 }
