@@ -68,5 +68,33 @@
         <li>Pent          (012)              [Lv 11 - 35 - 19 - 23 - 18 - 16 - 13 - 19]</li>
         <li>Nils + Ninian (000){00 + 00}     [Lv 20 - 31 - 01 - 00 - 26 - 25 - 12 - 19]</li>
     </ul>
+
+    <h2 class="smaller"> Fire Emblem Three Houses -- Normal Classic -- Church of Seiros Path- 2019-08-04 </h2>
+    <ul>
+        <li>Bernadetta 196</li>
+        <li>Byleth 195</li>
+        <li>Caspar 164</li>
+        <li>Sylvain 159</li>
+        <li>Petra 149</li>
+        <li>Ferdinand 120</li>
+        <li>Seteth 95</li>
+        <li>Linhardt 85</li>
+        <li>Dorothea 67</li>
+        <li>Flayn 53</li>
+        <li>Mercedes 3</li>
+        <li>F Byleth x Mercedes</li>
+        <li>Caspar x Dorothea</li>
+        <li>Bernadetta x Ferdinand</li>
+        <li>Linhardt x Flayn</li>
+    </ul>
+
+    <h2 class="smaller"> Fire Emblem Blazing Blade -- Normal Eliwood Mode - 2019-06-14 </h2>
+    <ul>
+        <li>Format : Unit name (Total kills - Deaths){Lyn Mode kills + Eliwood Mode kills} [Level - MaxHP - Str/Mgc - Skl - Spd - Lck - Def - Res ]
+        <li>Kent          (119){40 + 79}     [Lv 12 - 46 - 17 - 23 - 17 - 06 - 13 - 05]</li>
+        <li>Lucius        (096){13 + 83}     [Lv 15 - 43 - 21 - 23 - 21 - 11 - 06 - 30]</li>
+        <li>Lowen         (095 - 1)          [Lv 15 - 55 - 13 - 16 - 17 - 19 - 22 - 09]</li>
+        <li>Sain          (092){41 + 51}     [Lv 10 - 48 - 22 - 16 - 15 - 14 - 12 - 08]</li>
+        <li>Heath         (087)              [Lv 20 - 54 - 27 - 25 - 23 - 17 - 23 - 12]</li>
 </div>
 @endsection
