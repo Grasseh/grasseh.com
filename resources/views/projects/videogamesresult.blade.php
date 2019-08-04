@@ -88,13 +88,5 @@
         <li>Linhardt x Flayn</li>
     </ul>
 
-    <h2 class="smaller"> Fire Emblem Blazing Blade -- Normal Eliwood Mode - 2019-06-14 </h2>
-    <ul>
-        <li>Format : Unit name (Total kills - Deaths){Lyn Mode kills + Eliwood Mode kills} [Level - MaxHP - Str/Mgc - Skl - Spd - Lck - Def - Res ]
-        <li>Kent          (119){40 + 79}     [Lv 12 - 46 - 17 - 23 - 17 - 06 - 13 - 05]</li>
-        <li>Lucius        (096){13 + 83}     [Lv 15 - 43 - 21 - 23 - 21 - 11 - 06 - 30]</li>
-        <li>Lowen         (095 - 1)          [Lv 15 - 55 - 13 - 16 - 17 - 19 - 22 - 09]</li>
-        <li>Sain          (092){41 + 51}     [Lv 10 - 48 - 22 - 16 - 15 - 14 - 12 - 08]</li>
-        <li>Heath         (087)              [Lv 20 - 54 - 27 - 25 - 23 - 17 - 23 - 12]</li>
 </div>
 @endsection
