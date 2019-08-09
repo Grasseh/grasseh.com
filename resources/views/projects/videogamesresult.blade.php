@@ -69,7 +69,7 @@
         <li>Nils + Ninian (000){00 + 00}     [Lv 20 - 31 - 01 - 00 - 26 - 25 - 12 - 19]</li>
     </ul>
 
-    <h2 class="smaller"> Fire Emblem Three Houses -- Normal Classic -- Church of Seiros Path- 2019-08-04 </h2>
+    <h2 class="smaller"> Fire Emblem Three Houses -- Normal Classic -- Silver Snow Path - 2019-08-04 </h2>
     <ul>
         <li>Bernadetta 196</li>
         <li>Byleth 195</li>
@@ -86,6 +86,26 @@
         <li>Caspar x Dorothea</li>
         <li>Bernadetta x Ferdinand</li>
         <li>Linhardt x Flayn</li>
+    </ul>
+
+    <h2 class="smaller"> Fire Emblem Three Houses -- Normal Classic -- Crimson Flower Path - 2019-08-04 </h2>
+    <ul>
+        <li>Byleth 149</li>
+        <li>Petra 145</li>
+        <li>Edelgard 125</li>
+        <li>Bernadetta 124</li>
+        <li>Caspar 109</li>
+        <li>Hubert 95</li>
+        <li>Sylvain 91</li>
+        <li>Ferdinand 78</li>
+        <li>Dorothea 47</li>
+        <li>Linhardt 33</li>
+        <li>Manuela 3</li>
+        <li>F Byleth x Edelgard</li>
+        <li>Sylvain x Dorothea</li>
+        <li>Caspar x Petra</li>
+        <li>Bernadetta x Ferdinand</li>
+        <li>Hubert x Shamir</li>
     </ul>
 
 </div>
