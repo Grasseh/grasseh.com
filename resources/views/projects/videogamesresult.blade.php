@@ -108,5 +108,25 @@
         <li>Hubert x Shamir</li>
     </ul>
 
+    <h2 class="smaller"> Fire Emblem Three Houses -- Hard Classic -- Verdant Winds Path - 2019-08-24 </h2>
+    <ul>
+        <li>Leonie 209</li>
+        <li>Lorenz 199</li>
+        <li>Claude 198</li>
+        <li>Byleth 197</li>
+        <li>Raphael 186</li>
+        <li>Lysithea 171</li>
+        <li>Ignatz 169</li>
+        <li>Hilda 145</li>
+        <li>Marianne 98</li>
+        <li>Dorothea 36</li>
+        <li>Catherine 33</li>
+        <li>F Byleth x Dorothea</li>
+        <li>Lysithea x Linhardt</li>
+        <li>Marianne x Lorenz</li>
+        <li>Ignatz x Raphael('s sister)</li>
+        <li>Claude x Ingrid</li>
+    </ul>
 </div>
+
 @endsection
