@@ -127,6 +127,33 @@
         <li>Ignatz x Raphael('s sister)</li>
         <li>Claude x Ingrid</li>
     </ul>
+
+    <h2 class="smaller"> Dicey Dungeons - 2019-09-11 </h2>
+    <ul>
+        <li>Format : Losses per episode</li>
+        <li>Warrior  : 1-0-2-9-1-0</li>
+        <li>Thief    : 0-3-1-0-0-0</li>
+        <li>Robot    : 0-1-0-0-1-0</li>
+        <li>Inventor : 0-0-0-3-0-1</li>
+        <li>Witch    : 6-1-0-3-1-0</li>
+        <li>Jester   : 1-0-0-1-3-7</li>
+    </ul>
+
+    <h2 class="smaller"> Digimon Story : Cyber Sleuth - 2019-11-16 </h2>
+    <ul>
+        <li>Final Team:</li>
+        <li>Rosemon BM Lv 81</li>
+        <li>Neptunemon Lv 94</li>
+        <li>Ouryumon Lv 96</li>
+        <li>TigerVespamon Lv 99</li>
+        <li>Dianamon Lv 93</li>
+        <li>Vikemon Lv 96</li>
+        <li>Piedmon Lv 90</li>
+        <li>HiAndromon Lv 93</li>
+        <li>Machinedramon Lv 91</li>
+        <li>MetalEtemon Lv 86</li>
+        <li>PlatinumNumemon Lv 79</li>
+    </ul>
 </div>
 
 @endsection
