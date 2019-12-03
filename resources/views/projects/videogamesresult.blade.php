@@ -154,6 +154,22 @@
         <li>MetalEtemon Lv 86</li>
         <li>PlatinumNumemon Lv 79</li>
     </ul>
+
+    <h2 class="smaller"> Digimon Story : Hacker's Memory - 2019-12-01 </h2>
+    <ul>
+        <li>Final Team:</li>
+        <li>Rosemon BM Lv 63</li>
+        <li>Lilithmonth Lv 66</li>
+        <li>Mastemon Lv 85</li>
+        <li>Ophanimon Lv 79</li>
+        <li>Dianamon Lv 69</li>
+        <li>Sakuyamon Lv 73</li>
+        <li>Crusadermon Lv 71</li>
+        <li>Lotosmon Lv 73</li>
+        <li>Minervamon Lv 86</li>
+        <li>Kuzuhamon Lv 79</li>
+        <li>Sistermon C Awake. Lv 32</li>
+    </ul>
 </div>
 
 @endsection
