@@ -170,6 +170,28 @@
         <li>Kuzuhamon Lv 79</li>
         <li>Sistermon C Awake. Lv 32</li>
     </ul>
+
+    <h2 class="smaller"> Fire Emblem Three Houses -- Hard Classic -- Azure Moon Path - 2020-01-18 </h2>
+    <ul>
+        <li>Byleth 202</li>
+        <li>Dimitri 179</li>
+        <li>Ashe 178</li>
+        <li>Felix 169</li>
+        <li>Ingrid 167</li>
+        <li>Sylvain 141</li>
+        <li>Dedue 132</li>
+        <li>Hanneman 118</li>
+        <li>Annette 116</li>
+        <li>Gilbert 46</li>
+        <li>Mercedes 33</li>
+        <li>Manuella 26</li>
+        <li>Annette x Gilbert</li>
+        <li>Ashe x Mercedes</li>
+        <li>Felix x Sylvain</li>
+        <li>Dedue x Ingrid</li>
+        <li>Dimitri x Flayn</li>
+        <li>Hanneman x Manuella</li>
+    </ul>
 </div>
 
 @endsection
