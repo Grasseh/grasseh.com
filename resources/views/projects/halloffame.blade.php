@@ -73,6 +73,15 @@
         <li> Ionam -- Exeggutor -- Lv 58</li>
         <li> Nilaf -- Vileplume -- Lv 61</li>
     </ul>
+    <h3> Shield </h3>
+    <ul>
+        <li> Artya -- Roserade -- Lv 58</li>
+        <li> Argaw -- Ludicolo -- Lv 59</li>
+        <li> Colse -- Eldegoss -- Lv 56</li>
+        <li> Addun -- Appletun -- Lv 60</li>
+        <li> Aviee -- Abomasnow -- Lv 62</li>
+        <li> Redem -- Rillaboom -- Lv 58</li>
+    </ul>
     <h2> Bug </h2>
 </div>
 @endsection
