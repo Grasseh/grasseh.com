@@ -82,6 +82,15 @@
         <li> Aviee -- Abomasnow -- Lv 62</li>
         <li> Redem -- Rillaboom -- Lv 58</li>
     </ul>
+    <h3> Shining Pearl </h3>
+    <ul>
+        <li> Artya -- Roserade -- Lv 63</li>
+        <li> Milde -- Cherrim -- Lv 63</li>
+        <li> Madya -- Wormadam-G -- Lv 63</li>
+        <li> Nyita -- Carnivine -- Lv 59</li>
+        <li> Aviee -- Abomasnow -- Lv 56</li>
+        <li> Raedu -- Torterra -- Lv 64</li>
+    </ul>
     <h2> Bug </h2>
 </div>
 @endsection
