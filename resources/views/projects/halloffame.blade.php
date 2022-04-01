@@ -91,6 +91,13 @@
         <li> Aviee -- Abomasnow -- Lv 56</li>
         <li> Raedu -- Torterra -- Lv 64</li>
     </ul>
+    <h3> Colosseum ( + 100 Mt Battle) </h3>
+    <ul>
+        <li> Namii -- Meganium -- Lv 75</li>
+        <li> Anyal -- Jumpluff -- Lv 68</li>
+        <li> Borga -- Sunflora -- Lv 60</li>
+        <li> Trida -- Tropius -- Lv 63</li>
+    </ul>
     <h2> Bug </h2>
 </div>
 @endsection
