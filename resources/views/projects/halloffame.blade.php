@@ -98,6 +98,16 @@
         <li> Borga -- Sunflora -- Lv 60</li>
         <li> Trida -- Tropius -- Lv 63</li>
     </ul>
+    <h3> Violet </h3>
+    <ul>
+        <li> Fleer -- Toedscruel -- Lv 67</li>
+        <li> Kysty -- Scovillain -- Lv 77</li>
+        <li> Wegdd -- Meowscarada -- Lv 67</li>
+        <li> Paren -- Rotom-Mow -- Lv 68</li>
+        <li> Ploik -- Brambleghast -- Lv 68</li>
+        <li> Moleb -- Breloom -- Lv 68</li>
+        <li> Anyal -- Jumpluff -- Lv  36 (Early Game Carry)</li>
+    </ul>
     <h2> Bug </h2>
 </div>
 @endsection
