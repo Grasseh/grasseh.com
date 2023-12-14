@@ -1,14 +1,14 @@
 let races = [
     'Argonian',
     'Breton',
-    'Dark',
-    'High',
+    'Dark Elf',
+    'High Elf',
     'Imperial',
     'Khajiit',
     'Nord',
     'Orc',
     'Redguard',
-    'Wood',
+    'Wood Elf',
 ]
 
 let skill_trees = [
@@ -44,7 +44,11 @@ $(function(){
 
         $("#ironscrolls-race").html(shuffled_races[0]);
         $("#ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
-        $("#ironscrolls-quests").html(shuffled_quests[0]);
+        $("#ironscrolls-quest-0").html(shuffled_quests[0]);
+        $("#ironscrolls-quest-1").html(hidden_html(shuffled_quests[1], 1));
+        $("#ironscrolls-quest-2").html(shuffled_quests[2]);
+        $("#ironscrolls-quest-3").html(shuffled_quests[3]);
+        $("#ironscrolls-quest-4").html(shuffled_quests[4]);
     }
 
     $("#roll").click(function(){randomize()});
@@ -58,5 +62,9 @@ $(function(){
         }
 
         return array;
+    }
+
+    function hiddenHtml(value, index){
+        "HIDDEN"
     }
 });
