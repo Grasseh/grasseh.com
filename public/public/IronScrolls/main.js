@@ -1,4 +1,4 @@
-races = [
+let races = [
     'Argonian',
     'Breton',
     'Dark',
@@ -11,7 +11,7 @@ races = [
     'Wood',
 ]
 
-skill_trees = [
+let skill_trees = [
     'Illusion',
     'Conjuration',
     'Destruction',
@@ -28,7 +28,7 @@ skill_trees = [
     'Speech',
 ]
 
-quest_lines = [
+let quest_lines = [
     'Mage Guild Questline',
     'Companions questline',
     'Thieves Guild Questline',
@@ -38,9 +38,9 @@ quest_lines = [
 
 $(function(){
     function randomize(){
-        quest_lines = shuffleArray(quest_lines);
-        races = shuffleArray(races);
-        skill_trees = shuffleArray(skill_trees);
+        let quest_lines = shuffleArray(quest_lines);
+        let races = shuffleArray(races);
+        let skill_trees = shuffleArray(skill_trees);
 
         $(".ironscrolls-race").html(races[0]);
         $(".ironscrolls-skills").html(skills[0] + ',' + skills[1] + ',' + skills[2]);
