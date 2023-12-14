@@ -17,11 +17,11 @@
 <div class="content">
     Race:<span id="ironscrolls-race" style="bold"></span><br/>
     Skills:<span id="ironscrolls-skills" style="bold"></span><br/>
-    Quest Order:<span id="ironscrolls-quests" style="bold"></span><br/>
-    <span id="ironscrolls-quests" style="bold"></span><br/>
-    <span id="ironscrolls-quests" style="bold"></span><br/>
-    <span id="ironscrolls-quests" style="bold"></span><br/>
-    <span id="ironscrolls-quests" style="bold"></span><br/>
+    Quest Order:<span id="ironscrolls-quests-0" style="bold"></span><br/>
+    <span id="ironscrolls-quests-1" style="bold"></span><br/>
+    <span id="ironscrolls-quests-2" style="bold"></span><br/>
+    <span id="ironscrolls-quests-3" style="bold"></span><br/>
+    <span id="ironscrolls-quests-4" style="bold"></span><br/>
     <button id="roll">Roll</button>
 </div>
 @endsection
