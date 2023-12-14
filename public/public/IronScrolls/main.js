@@ -38,13 +38,13 @@ let quest_lines = [
 
 $(function(){
     function randomize(){
-        let quest_lines = shuffleArray(quest_lines);
-        let races = shuffleArray(races);
-        let skill_trees = shuffleArray(skill_trees);
+        let shuffled_quest_lines = shuffleArray(quest_lines);
+        let shuffled_races = shuffleArray(races);
+        let shuffled_skill_trees = shuffleArray(skill_trees);
 
-        $(".ironscrolls-race").html(races[0]);
-        $(".ironscrolls-skills").html(skills[0] + ',' + skills[1] + ',' + skills[2]);
-        $(".ironscrolls-quests").html(quests[0]);
+        $(".ironscrolls-race").html(shuffled_races[0]);
+        $(".ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
+        $(".ironscrolls-quests").html(shuffled_quests[0]);
     }
 
     $("#roll").click(function(){randomize()});
