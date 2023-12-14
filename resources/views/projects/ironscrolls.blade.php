@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.masternofooter')
 
 @section('title', 'Iron Scrolls Random Roller')
 
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/public/LogParser/css/style.css">
     <link rel="icon" type="image/png" href="/public/images/logo.png">
     <script type="text/javascript" src="/public/libs/jquery.js" ></script>
-    <script src="/public/IronScrolls/js/main.js" ></script>
+    <script src="/public/IronScrolls/main.js" ></script>
 @endsection
 
 @section('content')
