@@ -26,6 +26,9 @@ Route::get('/logparser', function () {
 Route::get('/hall-of-fame', function () {
     return view('projects.halloffame');
 });
+Route::get('/iron-scrolls', function () {
+    return view('projects.ironscrolls');
+});
 Route::get('/video-game-results', function () {
     return view('projects.videogamesresult');
 });
