@@ -42,8 +42,9 @@ $(function(){
         races = shuffleArray(races);
         skill_trees = shuffleArray(skill_trees);
 
-        string = "Race: " + races[0];
-        $(".ironscrolls-result").html(string);
+        $(".ironscrolls-race").html(races[0]);
+        $(".ironscrolls-skills").html(skills[0] + ',' + skills[1] + ',' + skills[2]);
+        $(".ironscrolls-quests").html(quests[0]);
     }
 
     $("#parse").click(function(){parse()});
