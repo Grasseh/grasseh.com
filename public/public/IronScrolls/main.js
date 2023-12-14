@@ -38,9 +38,9 @@ let quest_lines = [
 
 $(function(){
     function randomize(){
-        let shuffled_quest_lines = shuffleArray(quest_lines);
+        let shuffled_quests = shuffleArray(quest_lines);
         let shuffled_races = shuffleArray(races);
-        let shuffled_skill_trees = shuffleArray(skill_trees);
+        let shuffled_skill = shuffleArray(skill_trees);
 
         $(".ironscrolls-race").html(shuffled_races[0]);
         $(".ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
