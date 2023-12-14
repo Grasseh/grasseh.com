@@ -69,8 +69,8 @@ $(function(){
     }
 
     function hiddenHtml(value, index){
-        return "<button id='hidden" + index + "'> Quest Hidden -- Click to Show </button>\
-        <span style='bold' id='hiddencontent" + index"'>" + value + "</span>"
+        return "<button id='hidden" + index + "'> Quest Hidden -- Click to Show </button>" +
+        "<span style='bold' id='hiddencontent" + index + "'>" + value + "</span>"
     }
 
     function show(index){
