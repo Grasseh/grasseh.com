@@ -44,14 +44,14 @@ $(function(){
 
         $("#ironscrolls-race").html(shuffled_races[0]);
         $("#ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
-        $("#ironscrolls-quest-0").html(shuffled_quests[0]);
-        $("#ironscrolls-quest-1").html(hiddenHtml(shuffled_quests[1], 1));
+        $("#ironscrolls-quests-0").html(shuffled_quests[0]);
+        $("#ironscrolls-quests-1").html(hiddenHtml(shuffled_quests[1], 1));
         $("#hidden1").click(function(){show(1)});
-        $("#ironscrolls-quest-2").html(hiddenHtml(shuffled_quests[2], 2));
+        $("#ironscrolls-quests-2").html(hiddenHtml(shuffled_quests[2], 2));
         $("#hidden2").click(function(){show(2)});
-        $("#ironscrolls-quest-3").html(hiddenHtml(shuffled_quests[3], 3));
+        $("#ironscrolls-quests-3").html(hiddenHtml(shuffled_quests[3], 3));
         $("#hidden3").click(function(){show(3)});
-        $("#ironscrolls-quest-4").html(hiddenHtml(shuffled_quests[4], 4));
+        $("#ironscrolls-quests-4").html(hiddenHtml(shuffled_quests[4], 4));
         $("#hidden4").click(function(){show(4)});
     }
 
