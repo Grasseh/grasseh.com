@@ -47,7 +47,7 @@ $(function(){
         $(".ironscrolls-quests").html(quests[0]);
     }
 
-    $("#parse").click(function(){parse()});
+    $("#roll").click(function(){randomize()});
 
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
