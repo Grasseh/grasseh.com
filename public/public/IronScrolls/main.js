@@ -42,9 +42,9 @@ $(function(){
         let shuffled_races = shuffleArray(races);
         let shuffled_skills = shuffleArray(skill_trees);
 
-        $(".ironscrolls-race").html(shuffled_races[0]);
-        $(".ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
-        $(".ironscrolls-quests").html(shuffled_quests[0]);
+        $("#ironscrolls-race").html(shuffled_races[0]);
+        $("#ironscrolls-skills").html(shuffled_skills[0] + ',' + shuffled_skills[1] + ',' + shuffled_skills[2]);
+        $("#ironscrolls-quests").html(shuffled_quests[0]);
     }
 
     $("#roll").click(function(){randomize()});

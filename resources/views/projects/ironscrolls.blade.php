@@ -15,9 +15,9 @@
 
 @section('content')
 <div class="content">
-    Race:<span id="ironscrolls-race" /><br/>
-    Skills:<span id="ironscrolls-skills" /><br/>
-    Quest Order:<span id="ironscrolls-quests" /><br/>
+    Race:<span id="ironscrolls-race"></span><br/>
+    Skills:<span id="ironscrolls-skills"></span><br/>
+    Quest Order:<span id="ironscrolls-quests"></span><br/>
     <button id="roll">Roll</button>
 </div>
 @endsection
