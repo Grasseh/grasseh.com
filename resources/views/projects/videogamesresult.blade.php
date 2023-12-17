@@ -192,6 +192,16 @@
         <li>Dimitri x Flayn</li>
         <li>Hanneman x Manuella</li>
     </ul>
+
+    <h2 class="smaller"> Pokemon Gaia - 2023-12-17 </h2>
+    <ul>
+        <li>Toast -- Torterra Lv55</li>
+        <li>Run -- Florges Lv55</li>
+        <li>Sees -- Xatu Lv52</li>
+        <li>Symp -- Gigalith Lv52</li>
+        <li>Blessed -- Florges Lv54</li>
+        <li>Yrru -- Lucario Lv55</li>
+    </ul>
 </div>
 
 @endsection
