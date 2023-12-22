@@ -117,6 +117,7 @@
     <li> White out = Run is lost </li>
     <li> Rare candies are allowed because of level cap </li>
     <li> No legendaries </li>
+    <li> Starter must be Grass type </li>
     <h2> Blue </h2>
     <ul>
         <li> Attempts : 1 </li>
