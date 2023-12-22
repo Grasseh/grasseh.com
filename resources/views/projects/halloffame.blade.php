@@ -108,6 +108,20 @@
         <li> Moleb -- Breloom -- Lv 68</li>
         <li> Anyal -- Jumpluff -- Lv  36 (Early Game Carry)</li>
     </ul>
-    <h2> Bug </h2>
+    <h1> Hardcore Nuzlocke </h1>
+    <h2> Rules </h2>
+    <li> No Items </li>
+    <li> 0 HP = Retire and never use again </li>
+    <li> Level cap </li>
+    <li> Dupe Clause </li>
+    <li> White out = Run is lost </li>
+    <li> Rare candies are allowed because of level cap </li>
+    <li> No legendaries </li>
+    <h2> Blue </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: Poliwrath, Snorlax, Slowbro, Alakazam, Cloyster, Gyarados </li>
+        <li> Retirement Center: Empty </li>
+    </ul>
 </div>
 @endsection
