@@ -124,5 +124,11 @@
         <li> Elite Four Team: Poliwrath, Snorlax, Slowbro, Alakazam, Cloyster, Gyarados </li>
         <li> Retirement Center: Empty </li>
     </ul>
+    <h2> Silver </h2>
+    <ul>
+        <li> Attempts : 2 </li>
+        <li> Elite Four Team: T-Rivieres (<b>Crobat</b>), Repentigny (<b>Slowbro</b>), Ste-Julie (<b>Forretress</b>), PointClair (<b>Lanturn</b>), Chambly (<b>Girafarig</b>), Terrebonne (<b>Gyarados</b>),  </li>
+        <li> Retirement Center: Jonquieres (<b>Gastly</b>), Drummondvl (<b>Beedril</b>), PointClair (<b>Lanturn</b>), T-Rivieres (<b>Crobat</b>), Ste-Julie (<b>Forretress</b>), Chambly (<b>Girafarig</b>), Terrebonne (<b>Gyarados</b>) </li>
+    </ul>
 </div>
 @endsection
