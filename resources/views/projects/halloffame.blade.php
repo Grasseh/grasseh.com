@@ -126,9 +126,15 @@
     </ul>
     <h2> Silver </h2>
     <ul>
-        <li> Attempts : 2 </li>
+        <li> Attempts : 2 (Wipes: Karen)</li>
         <li> Elite Four Team: T-Rivieres (<b>Crobat</b>), Repentigny (<b>Slowbro</b>), Ste-Julie (<b>Forretress</b>), PointClair (<b>Lanturn</b>), Chambly (<b>Girafarig</b>), Terrebonne (<b>Gyarados</b>),  </li>
         <li> Retirement Center: Jonquieres (<b>Gastly</b>), Drummondvl (<b>Beedril</b>), PointClair (<b>Lanturn</b>), T-Rivieres (<b>Crobat</b>), Ste-Julie (<b>Forretress</b>), Chambly (<b>Girafarig</b>), Terrebonne (<b>Gyarados</b>) </li>
+    </ul>
+    <h2> Sapphire </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: Caribou (<b>Magneton</b>), HDMichigan (<b>Starmie</b>), MapleCream (<b>Walrein</b>), Galvaude (<b>Kingdra</b>), PetDeSoeur (<b>Sharpedo</b>), PoudChomer (<b>Altaria</b>) </li>
+        <li> Retirement Center: PateViande (<b>Dustox</b>), PoudChomer (<b>Altaria</b>), Caribou (<b>Magneton</b>), MapleCream (<b>Walrein</b>), PetDeSoeur (<b>Sharpedo</b>)</li>
     </ul>
 </div>
 @endsection
