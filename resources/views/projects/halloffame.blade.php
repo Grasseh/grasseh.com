@@ -121,8 +121,8 @@
     <h2> Blue </h2>
     <ul>
         <li> Attempts : 1 </li>
-        <li> Elite Four Team: Poliwrath, Snorlax, Slowbro, Alakazam, Cloyster, Gyarados </li>
-        <li> Retirement Center: Empty </li>
+        <li> Elite Four Team: Spiral (<b>Poliwrath</b>), Dozer (<b>Snorlax</b>), Slowmo (<b>Slowbro</b>), Psi (<b>Alakazam</b>), Shelly (<b>Cloyster</b>), Splashy (<b>Gyarados</b>) </li>
+        <li> Retirement Center: Empty! </li>
     </ul>
     <h2> Silver </h2>
     <ul>
@@ -135,6 +135,12 @@
         <li> Attempts : 1 </li>
         <li> Elite Four Team: Caribou (<b>Magneton</b>), HDMichigan (<b>Starmie</b>), MapleCream (<b>Walrein</b>), Galvaude (<b>Kingdra</b>), PetDeSoeur (<b>Sharpedo</b>), PoudChomer (<b>Altaria</b>) </li>
         <li> Retirement Center: PateViande (<b>Dustox</b>), PoudChomer (<b>Altaria</b>), Caribou (<b>Magneton</b>), MapleCream (<b>Walrein</b>), PetDeSoeur (<b>Sharpedo</b>)</li>
+    </ul>
+    <h2> Leaf Green </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: Gros Morne (<b>Slowbro</b>), Torngat (<b>Ninetales</b>), Yoho (<b>Starmie</b>), PacificRim (<b>Magneton</b>), Naats'ichc (<b>Snorlax</b>), Vuntut (<b>Poliwrath</b>) </li>
+        <li> Retirement Center: Empty! </li>
     </ul>
 </div>
 @endsection
