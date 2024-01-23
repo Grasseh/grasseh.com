@@ -142,5 +142,11 @@
         <li> Elite Four Team: Gros Morne (<b>Slowbro</b>), Torngat (<b>Ninetales</b>), Yoho (<b>Starmie</b>), PacificRim (<b>Magneton</b>), Naats'ichc (<b>Snorlax</b>), Vuntut (<b>Poliwrath</b>) </li>
         <li> Retirement Center: Empty! </li>
     </ul>
+    <h2> Diamond </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: La Grande (<b>Whiscash</b>), Fraser (<b>Gyarados</b>), Saguenay (<b>Gyarados</b>), Thelon (<b>Blissey</b>), Assiniboin (<b>Chimecho</b>), Peel (<b>Abomasnow</b>) </li>
+        <li> Retirement Center: Mackenzie (<b>Turtwig</b>), La Grande (<b>Whiscash</b>) </li>
+    </ul>
 </div>
 @endsection
