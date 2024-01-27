@@ -148,5 +148,11 @@
         <li> Elite Four Team: La Grande (<b>Whiscash</b>), Fraser (<b>Gyarados</b>), Saguenay (<b>Lucario</b>), Thelon (<b>Blissey</b>), Assiniboin (<b>Chimecho</b>), Peel (<b>Abomasnow</b>) </li>
         <li> Retirement Center: Mackenzie (<b>Turtwig</b>), La Grande (<b>Whiscash</b>) </li>
     </ul>
+    <h2> Y </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: REMAX (<b>Snorlax</b>), TimHortons (<b>Chesnaught</b>), MarlinTravel (<b>Dedenne</b>), Jan-Pro (<b>Lucario</b>), Domino's (<b>Granbull</b>), Belron (<b>Chandelure</b>) </li>
+        <li> Retirement Center: Canadian Tire (<b>Tentacruel</b>), Gateway News (<b>Aurorus</b>), Century 21 (<b>Gyarados</b>), Belron (<b>Chandelure</b>), Domino's (<b>Granbull</b>), Jan-Pro (<b>Lucario</b>) </li>
+    </ul>
 </div>
 @endsection
