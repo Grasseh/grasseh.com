@@ -111,7 +111,7 @@
     <h1> Hardcore Nuzlocke </h1>
     <h2> Rules </h2>
     <li> No Items </li>
-    <li> 0 HP = Retire and never use again </li>
+    <li> 0 HP = Retire and never use again for this run</li>
     <li> Level cap </li>
     <li> Dupe Clause </li>
     <li> White out = Run is lost </li>
@@ -153,6 +153,16 @@
         <li> Attempts : 1 </li>
         <li> Elite Four Team: REMAX (<b>Snorlax</b>), TimHortons (<b>Chesnaught</b>), MarlinTravel (<b>Dedenne</b>), Jan-Pro (<b>Lucario</b>), Domino's (<b>Granbull</b>), Belron (<b>Chandelure</b>) </li>
         <li> Retirement Center: Canadian Tire (<b>Tentacruel</b>), Gateway News (<b>Aurorus</b>), Century 21 (<b>Gyarados</b>), Belron (<b>Chandelure</b>), Domino's (<b>Granbull</b>), Jan-Pro (<b>Lucario</b>) </li>
+    </ul>
+    <h2> White </h2>
+    <ul>
+        <li> Attempts : 1 (Wipes: Elmer) </li>
+    </ul>
+    <h2> Alpha Sapphire </h2>
+    <ul>
+        <li> Attempts : 1 </li>
+        <li> Elite Four Team: Magnet (<b>Magnezon</b>), Fish (<b>Gyarados</b>), Lightning (<b>Manectric</b>), Guts (<b>Hariyama</b>), Savage (<b>Sharpedo</b>), Trainee (<b>Shedinja</b> -- cheerleader saw 0 use) </li>
+        <li> Retirement Center: Tiny Raccoon (<b>Zigzagoon</b>), Fish (<b>Gyarados</b>)</li>
     </ul>
 </div>
 @endsection
