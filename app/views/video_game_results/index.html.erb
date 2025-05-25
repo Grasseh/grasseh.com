@@ -1,7 +1,10 @@
-<% content_for :title do %>
-  Video Game Playthrough Archive
-<% end %>
+@section('title', 'Video Game Playthrough Archive')
 
+@section('head')
+    @extends('layouts.masterhead')
+@endsection
+
+@section('content')
 <div class="content">
     <h1> Video Game Playthrough Archive </h1>
     <h2 class="smaller"> Pokemon TCG 2 : GR - Fan Translation - 2019-05-28 </h2>
@@ -198,5 +201,3 @@
         <li>Yrru -- Lucario Lv55</li>
     </ul>
 </div>
-
-@endsection
