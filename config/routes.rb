@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get "competitions" => "competitions#index"
   get "projects" => "projects#index"
   get "blog" => "blog#index"
+  get "logparser" => "logparser#index"
 end
