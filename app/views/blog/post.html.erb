@@ -1,0 +1,24 @@
+<% content_for :title do %>
+  <%= @name %>
+<% end %>
+
+<% content_for :head do %>
+  <meta name="description" content="<%= @description %>">
+<% end %>
+
+<div class="row top">
+    <h1><a href="/blog">Blog</a></h1>
+</div>
+
+<div class="BlogText">
+    <%= sanitize @content %> <br/>
+    <br>
+    <br>
+</div>
+
+<div class = "row bottom">
+    <p>
+        Want to stay up to date on my publications?
+        Subscribe to my <a href="/rss/blog/feed"> Blog's RSS Feed. </a>
+    </p>
+</div>

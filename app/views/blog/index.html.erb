@@ -1,0 +1,22 @@
+<% content_for :title do %>
+  Blog
+<% end %>
+
+<% content_for :head do %>
+  <meta name="description" content="Steve Gagné's personnal blog. Contains random diaries about software development and video games.">
+<% end %>
+
+<div class="row top">
+    <h1>Blog</h1>
+    <br>
+        Welcome to my blog! It contains random diaries about software development and video games.
+    </br>
+</div>
+
+<div class="content">
+  <% @posts.each do |post| %>
+    <%= sanitize post %> <br/>
+  <% end %>
+<br>
+<br>
+</div>

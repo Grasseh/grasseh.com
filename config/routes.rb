@@ -16,5 +16,7 @@ Rails.application.routes.draw do
   get "competitions" => "competitions#index"
   get "projects" => "projects#index"
   get "blog" => "blog#index"
+  get "blog/:slug" => "blog#post"
   get "logparser" => "logparser#index"
+  get "rss/blog/feed" => "blog#feed", defaults: { format: "xml" }
 end
