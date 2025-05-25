@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   root "index#index"
   get "video-game-results" => "video_game_results#index"
   get "hall-of-fame" => "hall_of_fame#index"
+  get "competitions" => "competitions#index"
 end
