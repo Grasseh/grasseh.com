@@ -1,0 +1,104 @@
+
+.container {
+    background-color : #E0D3E8 ;
+    text-align : center;
+    font-family: 'Merriweather', serif;
+    font-size : 18px;
+}
+
+.header{
+    margin-top : 20px;
+    left : 50%;
+}
+
+.logo{
+    width : 100px;
+    height : 100px;
+}
+
+.index{
+    width : 40%;
+    margin-left :auto;
+    margin-right : auto;
+}
+
+a{
+    color : #666666;
+}
+
+a:hover{
+    color : #225500;
+}
+
+.help{
+    line-height: 100px;
+}
+
+.helpFooter{
+    line-height: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.blogText{
+    text-align:left;
+    width : 90%;
+    font-size : 14px;
+    margin-left : 20px;
+}
+
+.blogText > h4{
+    font-size : 16px;
+}
+
+.notesText{
+    text-align:left;
+    width : 90%;
+    font-size : 8px;
+    margin-left : 20px;
+}
+
+.notesText > p{
+    padding-bottom:5px;
+    margin-bottom:5px;
+    line-height:12px;
+}
+
+.notesText > h1{
+    font-size : 10px;
+}
+
+.notesText > h2{
+    font-size : 9px;
+}
+
+.notesText > h3, h4, h5{
+    font-size : 8px;
+}
+
+.notesText > h1, h2, h3, h4, h5{
+    letter-spacing: 0rem;
+    font-weight : bold;
+}
+
+.competition{
+    padding-bottom: 20px;
+}
+
+.BlogText > p > img {
+    display: block;
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+.smaller{
+    font-size : 20px;
+}
