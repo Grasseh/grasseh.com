@@ -7,3 +7,5 @@ This is my website.
 1. Clone the repo
 2. Install rbenv
 3. rails server
+
+# Prod
